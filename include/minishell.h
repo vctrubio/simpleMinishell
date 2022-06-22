@@ -1,0 +1,104 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   minishell.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cbrito-l <cbrito-l@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/20 17:59:01 by cbrito-l          #+#    #+#             */
+/*   Updated: 2022/03/20 17:59:01 by cbrito-l         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef MINISHELL_H
+# define MINISHELL_H
+
+#include <stdbool.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <signal.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <readline/readline.h>
+#include <readline/history.h>
+#include "libft.h"
+#include <termios.h>
+#include <errno.h>
+
+// error codes
+# define SUCESS 0
+# define ERROR 1
+# define IS_DIRECTORY 126
+# define ERROR_127 127
+
+
+typedef struct	s_linklist
+{
+	char			*name;
+	char			*content;
+	struct s_linklist	*next;
+}		t_ll;
+
+
+typedef struct s_minishell
+{
+	char	**envp;	//envp used for execution
+	t_ll	*var;	//used for local var ie: $var=variables
+	t_ll	*env;	//link_list to save envps
+	int	ec; //exitcode
+}		t_shell;
+
+//minishell
+t_shell		*get_shell(void);
+void		ft_minishell(t_shell *shell);
+//minishell2.0
+char	**ft_list_to_array(t_list *l);
+//signals
+void	init_termios_n_signal(void);
+
+//utilStrFind
+bool  	ft_strlook_char(char *str, char l);
+bool  	ft_strlook(char *str, char *look);
+bool	ft_strexact(char *s1, char *s2);
+bool	ft_strexact_abs(char *s1, char *s2);
+//utilStrFind
+char	*ft_strldupimp(char *str, int i, int j);
+char	*ft_strldup(char *str, int l);
+char	*ft_strfdup(char *str, int f);
+//utilPrint
+void 	print_arrays(char **a);
+void	print_ll(t_ll *v);
+
+
+
+/*
+//utilMyUtil.c
+bool  	no_quotes(t_array *a);
+char	*ft_strldupimp(char *str, int i, int j);
+char	*ft_strldup(char *str, int l);
+char	*ft_strfdup(char *str, int f);
+bool 	ft_strlook(char *str, char *look);
+bool  	ft_strlook_char(char *str, char l);
+bool	ft_strexact(char *s1, char *s2);
+bool	ft_strexact_abs(char *s1, char *s2);
+void	vars_to_array(t_args **arr, t_var *var);
+void 	ft_stradd(char **str, char *add);
+
+//utilPrint
+void  print_arrays(char **a);
+void  print_targs(t_args *a);
+void  print_tkn(t_token *t);
+void  print_var(t_var *v);
+void  print_array(t_array *a);
+
+//free
+void	free_variables(t_var **vars);
+void	free_str(char *str);
+void	free_array(t_array **arr);
+void	free_tokens(t_token **tokens);
+int		free_minishell(t_minishell **shell);
+void	free_arrays(char **arr);
+*/
+
+#endif
