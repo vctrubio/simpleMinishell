@@ -51,11 +51,17 @@ typedef struct s_minishell
 
 //minishell
 t_shell		*get_shell(void);
-void		ft_minishell(t_shell *shell);
+void		ft_minishell(void);
 //minishell2.0
 char	**ft_list_to_array(t_list *l);
 //signals
 void	init_termios_n_signal(void);
+//free
+void	free_str(char *str);
+void	free_arrays(char **arr);
+//prompt
+char	*get_usr(void);
+char	*ft_prompt(void);
 
 //utilStrFind
 bool  	ft_strlook_char(char *str, char l);
@@ -69,8 +75,15 @@ char	*ft_strfdup(char *str, int f);
 //utilPrint
 void 	print_arrays(char **a);
 void	print_ll(t_ll *v);
-
-
+//utilsLinkList
+int		ll_size(t_ll *l);
+t_ll	*rtn_ll(char *name, char *content);
+void	ll_add_content(t_ll **head, char *name, char *content);
+//utilsENVP
+void	shell_ll_to_envp(void);
+void	parse_envp_to_ll(char **e, t_ll **l);
+void	shell_envp_to_ll(void);
+char	*rtn_envp_from_ll(t_ll *l);
 
 /*
 //utilMyUtil.c
