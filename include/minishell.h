@@ -105,7 +105,7 @@ void	free_str(char *str);
 void	free_arrays(char **arr);
 void	free_tarrays(t_array **t);
 //dquote
-void	ft_dquote(char **str, char flag);
+void	ft_dquote(char **str, char c);
 //prompt
 char	*get_usr(void);
 char	*ft_prompt(void);
@@ -123,6 +123,7 @@ bool	ft_isspace(char c);
 char	*ft_strldupimp(char *str, int i, int j);
 char	*ft_strldup(char *str, int l);
 char	*ft_strfdup(char *str, int f);
+int		r_size(char *s);
 //utilPrint
 void 	print_arrays(char **a);
 void	print_tarrays(t_array *a);

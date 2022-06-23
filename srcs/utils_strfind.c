@@ -3,6 +3,26 @@
 char	*ft_strldupimp(char *str, int i, int j);
 char  *ft_strldup(char *str, int l);
 char  *ft_strfdup(char *str, int f);
+int		r_size(char *s);
+
+int		r_size(char *s)
+{
+	unsigned int len;
+
+	len = 0;
+	while (*s)
+	{
+		if (ft_isspace(*s))
+			++s;
+		else
+		{
+			++len;
+			while (*s && !ft_isspace(*s))
+				++s;
+		}
+	}
+	return (len);
+}
 
 char  *ft_strldup(char *str, int l)
 {

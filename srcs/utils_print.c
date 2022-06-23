@@ -4,11 +4,16 @@ void	print_arrays(char **a);
 
 void	print_arrays(char **a)
 {
-	while(*a)
-	{
-		printf("%s\n", *a);
-		a++;
-	}
+  int i;
+
+  i = 0;
+	while(a[i])
+  {
+    if (a[i])
+     if (ft_strlen(a[i]) == 0)
+      break;
+		printf("%s\n", a[i++]);
+  }
 }
 
 void	print_tarrays(t_array *a)
