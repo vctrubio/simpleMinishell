@@ -1,5 +1,11 @@
 #include "../include/minishell.h"
 
+void	part_2(void)
+{
+	printf("made it to part 2\n");
+	//open, read, append, path, heredoc
+}
+
 void	ft_minishell()
 {
 	char	*buff;
@@ -23,11 +29,12 @@ void	ft_minishell()
 				break;
 			init_parse(buff);
 			//TOKEN
+			part_2();
 
 			//EXECUTE
 
 			//FREE
-			// free_str(buff);
+			free_str(buff);
 		}
 	}
 

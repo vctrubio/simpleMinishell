@@ -1,4 +1,9 @@
+
 #include "../include/minishell.h"
+void	parse_buffer_loop(char **str, t_array *array);
+t_array	*parse_buffer(char *str);
+void	parse_string(char **str, t_array *a, char flag);
+
 
 void	parse_string(char **str, t_array *a, char flag)
 {
@@ -66,39 +71,3 @@ t_array	*parse_buffer(char *str)
 	return(head);
 }
 
-int		ft_scan_content(char *str)
-{
-	int count;
-	int	i;
-
-	i = -1;
-	count = 0;
-	while (str[++i])
-	{
-		if (str[i] == '"' || str[i] == '\'')
-			count++;
-	}
-	return (count);
-}
-
-void	init_parse(char *buffer)
-{
-	t_array	*ptr;
-	t_array	*ptr2;
-
-	ptr = parse_buffer(buffer);
-	// ft_store_tarry(ptr);
-	print_tarrays(ptr);
-	free_tarrays(&ptr);
-
-
-	// ptr2 = ft_store_tarry((t_array *)NULL);
-
-	// while (ptr)
-	// {
-	// 	if (ptr)
-	// 		parse_content(ptr);
-	// 	ptr = ptr->next;
-	// }
-
-}

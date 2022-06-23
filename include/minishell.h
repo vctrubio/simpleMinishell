@@ -35,6 +35,8 @@
 typedef struct	s_array
 {
 	char			*content;
+	bool			*d_quote;
+	bool			*s_quote;
 	struct s_array	*next;
 	struct s_array	*linked;
 	// int				link_next;
@@ -46,11 +48,13 @@ typedef struct	s_array
 typedef enum	e_type
 {
 	IS_CMD,
-	IS_RDR,
+	IS_RDR_IN,
+	IS_RDR_OUT,
+	IS_HEREDOC,
 	IS_PIPE,
-	IS_VAR,
-	IS_ENV,
-	SKIP,
+	// IS_ENV,
+	// SKIP,
+	NOTVALID,
 }				e_type;
 
 typedef struct	s_linklist
@@ -63,7 +67,8 @@ typedef struct	s_linklist
 typedef struct	s_token
 {
 	t_array			*cmd;
-	t_array			*args;
+	t_array			**args;
+	char			*exepath;
 	e_type			type;
 	struct s_token	*next;
 }				t_tkn;
@@ -83,12 +88,16 @@ t_shell		*get_shell(void);
 void		ft_minishell(void);
 //minishell2.0
 char	**ft_list_to_array(t_list *l);
-//memory_mallocs.c
 
 //parse
 void	init_parse(char *buffer);
+//parseBuffer
+void	parse_string(char **str, t_array *a, char flag);
+void	parse_buffer_loop(char **str, t_array *array);
+t_array	*parse_buffer(char *str);
 //memoryMalloc
 t_array	*rtn_t_array(void);
+t_tkn	*rtn_token(void);
 //signals
 void	init_termios_n_signal(void);
 //free
@@ -118,6 +127,7 @@ char	*ft_strfdup(char *str, int f);
 void 	print_arrays(char **a);
 void	print_tarrays(t_array *a);
 void	print_ll(t_ll *v);
+void  print_tkn(t_tkn *t);
 //utilsLinkList
 int		ll_size(t_ll *l);
 t_ll	*rtn_ll(char *name, char *content);

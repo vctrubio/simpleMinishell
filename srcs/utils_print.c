@@ -17,9 +17,9 @@ void	print_tarrays(t_array *a)
 	{
     if (a->content)
 	  	printf("content:%s\n", a->content);
-    if (a->linked)
+    // if (a->linked)
+    //   printf("notnull\n");
         // printf("is linked with %s |", a->linked->content);
-      printf("\n");
     // printf("sq:%d|dq:%d|jn:%d\n", a->single_quote, a->db_quote, a->join_next);
 		a = a->next;
 	}
@@ -46,3 +46,23 @@ void  print_ll(t_ll *v)
 }
 
 
+void  print_tkn(t_tkn *t)
+{
+  int         i;
+
+  if (!t)
+    return ;
+  printf("-print_tkn-*\n");
+  // printf("%d|%d ", t->cmd->s_quote, t->cmd->d_quote);
+  printf("CMD:%s\n", t->cmd->content);
+  i = 0;
+  while(t->args[i])
+  {
+    if (t->args[i])
+    // printf("%d|%d ", t->args[i]->s_quote, t->args[i]->d_quote);
+      printf("a%d:%s-\n", i, t->args[i]->content);
+    i++;
+  }
+  if (t->next != NULL)
+    print_tkn(t->next);
+}
