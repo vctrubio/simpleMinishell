@@ -15,12 +15,12 @@ void	print_tarrays(t_array *a)
 {
 	while (a)
 	{
-    if (a->raw)
-	  	printf("raw:%s\n", a->raw);
-    // if (a->content)
-		//   printf("content:%s\n", a->content);
-    // if (a->exepath)
-	  // 	printf("exe:%s\n", a->exepath);
+    if (a->content)
+	  	printf("content:%s\n", a->content);
+    if (a->linked)
+        // printf("is linked with %s |", a->linked->content);
+      printf("\n");
+    // printf("sq:%d|dq:%d|jn:%d\n", a->single_quote, a->db_quote, a->join_next);
 		a = a->next;
 	}
 }

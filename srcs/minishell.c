@@ -1,12 +1,5 @@
 #include "../include/minishell.h"
 
-t_shell	*get_shell(void)
-{
-	static t_shell	shell;
-
-	return (&shell);
-}
-
 void	ft_minishell()
 {
 	char	*buff;
@@ -21,6 +14,8 @@ void	ft_minishell()
 	{
 		//READLINE
 		buff = readline(ft_prompt());
+		if (ft_strexact(buff, "pl"))
+			print_ll(get_shell()->env);
 		if (!ft_strexact(buff, ""))
 		{
 			add_history(buff);

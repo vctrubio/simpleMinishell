@@ -14,8 +14,12 @@ void	ft_dquote(char **str, char flag)
 	while (*buff)
 	{
 		if (*buff == flag)
+		{
 			even_quotation = !even_quotation;
-		(*str)[i++] = *buff;
+			buff++;
+		}
+		if (*buff)
+			(*str)[i++] = *buff;
 		buff++;
 	}
 	if (even_quotation == false)

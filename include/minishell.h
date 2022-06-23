@@ -34,10 +34,13 @@
 
 typedef struct	s_array
 {
-	char			*raw; //with quotes
-	char			*content; //clean- parsed
-	char			*exepath; //executable path, if any
+	char			*content;
 	struct s_array	*next;
+	struct s_array	*linked;
+	// int				link_next;
+	// bool			single_quote; //single quote
+	// bool			db_quote;	//doube quote
+//	bool			join_next; //is the next one "this"isrelated$time (TRUE)
 }				t_array;
 
 typedef enum	e_type
@@ -91,11 +94,15 @@ void	init_termios_n_signal(void);
 //free
 void	free_str(char *str);
 void	free_arrays(char **arr);
+void	free_tarrays(t_array **t);
 //dquote
 void	ft_dquote(char **str, char flag);
 //prompt
 char	*get_usr(void);
 char	*ft_prompt(void);
+//staticCalls
+t_shell	*get_shell(void);
+t_array *ft_store_tarry(t_array *a);
 
 //utilStrExact
 bool  	ft_strlook_char(char *str, char l);
