@@ -11,6 +11,20 @@ void	print_arrays(char **a)
 	}
 }
 
+void	print_tarrays(t_array *a)
+{
+	while (a)
+	{
+    if (a->raw)
+	  	printf("raw:%s\n", a->raw);
+    // if (a->content)
+		//   printf("content:%s\n", a->content);
+    // if (a->exepath)
+	  // 	printf("exe:%s\n", a->exepath);
+		a = a->next;
+	}
+}
+
 void  print_ll(t_ll *v)
 {
 

@@ -21,7 +21,7 @@ char	*ft_prompt(void)
 {
 	char	*str;
 	char	prompt[255];
-	int		status;
+	int		status; //statuc of last command, if SUCCESS green, if failer RED, if -1 BLACK
 
 	status = get_shell()->ec;
 	str = getcwd(prompt, sizeof(prompt));

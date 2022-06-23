@@ -1,9 +1,9 @@
 #include "../include/minishell.h"
-bool  	ft_strlook_char(char *str, char l); //str look for one character
-bool  	ft_strlook(char *str, char *look); //str look for set of character
+bool  ft_strlook_char(char *str, char l); //str look for one character
+bool  ft_strlook(char *str, char *look); //str look for set of character
 bool	ft_strexact(char *s1, char *s2); //if its exactly the same
-bool	ft_strexact_abs(char *s1, char *s2); //if its exactly the same- but alpha
-
+bool  ft_strexact_abs(char *s1, char *s2); //if its exactly the same- but alpha
+bool  ft_isspace(char c);
 bool  ft_strlook_char(char *str, char l)
 {
   int i;
@@ -71,4 +71,16 @@ bool	ft_strexact_abs(char *s1, char *s2)
 		s2++;
 	}
 	return (true);
+}
+
+bool	ft_isspace(char c)
+{
+	if (c == '\t'
+		|| c == '\n'
+		|| c == '\v'
+		|| c == '\f'
+		|| c == '\r'
+		|| c == ' ')
+		return (1);
+	return (0);
 }

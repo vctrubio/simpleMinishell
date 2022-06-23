@@ -9,6 +9,7 @@ static int	init_minishell(char **envp)
 	shell->envp = envp;
 	ft_minishell();
 	exitcode = shell->ec;
+	//free ....
 	printf("exit code: %d\n", shell->ec);
 	return (exitcode);
 }
