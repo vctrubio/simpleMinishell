@@ -1,6 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/V/Documents/42/summer22/simpleMinishell'
+make: Entering directory `/Users/V/Documents/42/summer22/shs'
 make -C ./libft 
 gcc ./srcs/*.c ./libft/libft.a -o minishell -lreadline
-make: Leaving directory `/Users/V/Documents/42/summer22/simpleMinishell'
+make: Leaving directory `/Users/V/Documents/42/summer22/shs'
  

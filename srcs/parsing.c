@@ -2,8 +2,10 @@
 
 void	parse_string(char **str, t_array *a, char flag)
 {
-	int	i;
+	int		i;
+	bool	even_quote;
 
+	even_quote = false;
 	i = 0;
 	a->content = malloc(sizeof(char) * ft_strlen(*str) + 1);
 	if (!flag)
@@ -14,11 +16,15 @@ void	parse_string(char **str, t_array *a, char flag)
 	else if (flag)
 	{
 		(*str)++;
-		while (**str && **str != flag)
-			a->content[i++] = *(*str)++;
-		if (**str == flag)
+		while (**str)
+		{
+			if (**str == flag)
+				even_quote = !even_quote;
+			else
+				a->content[i++] = **str;
 			(*str)++;
-		else if (**str == 0)
+		}
+		if (!even_quote)
 			ft_dquote(&a->content, flag);
 	}
 }
@@ -30,19 +36,11 @@ void	parse_buffer_loop(char **str, t_array *array)
 	if (**str == 0)
 		return ;
 	if (**str == '\'')
-	{
 		parse_string(&(*str), array, **str);
-		// array->single_quote = true;
-	}
 	else if (**str == '"')
-	{
 		parse_string(&(*str), array, **str);
-		// array->db_quote = true;
-	}
 	else
 		parse_string(&(*str), array, (char)NULL);
-	// if (**str != 32 && **str != 0)
-		// array->join_next = true;
 }
 
 t_array	*parse_buffer(char *str)
