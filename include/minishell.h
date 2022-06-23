@@ -32,7 +32,7 @@
 # define IS_DIRECTORY 126
 # define ERROR_127 127
 
-typedef struct	s_array
+typedef struct	s_array //rubich
 {
 	char			*content;
 	bool			*d_quote;
@@ -77,7 +77,7 @@ typedef struct	s_token
 typedef struct s_minishell
 {
 	char	**envp;	//envp used for execution
-	t_ll	*var;	//used for local var ie: $var=variables
+	// t_ll	*var;	//used for local var ie: $var=variables
 	t_ll	*env;	//link_list to save envps
 	t_tkn	*tkn;
 	int	ec; //exitcode
@@ -92,9 +92,11 @@ char	**ft_list_to_array(t_list *l);
 //parse
 void	init_parse(char *buffer);
 //parseBuffer
-void	parse_string(char **str, t_array *a, char flag);
-void	parse_buffer_loop(char **str, t_array *array);
-t_array	*parse_buffer(char *str);
+char	*buffer_quotes(char **buff, char c, char *str, int i);
+char	*buffer_scan_for_quotes(char *str);
+char	*buffer_to_string(char **buff);
+char	**buffer_into_array(char *str);
+
 //memoryMalloc
 t_array	*rtn_t_array(void);
 t_tkn	*rtn_token(void);

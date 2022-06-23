@@ -1,6 +1,5 @@
 #include "../include/minishell.h"
 
-
 void	ft_dquote(char **output, char c)
 {
 	char	*buff;
@@ -20,4 +19,5 @@ void	ft_dquote(char **output, char c)
 	}
 	if (even_quotation == false)
 		ft_dquote(output, c);
+	//slight errror when there is a bit too many.... to check it out
 }
