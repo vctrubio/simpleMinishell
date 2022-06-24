@@ -24,7 +24,6 @@ void		dollar_for_money(char **out, char **str)
 
 	i = ft_strlen(*out);
 	j = 0;
-	printf("OUI---- %s\n", *str);
 	(*str)++;
 	if (**str == '?')
 	{
@@ -35,11 +34,9 @@ void		dollar_for_money(char **out, char **str)
 	}
 	else
 	{
-		printf("%s str\n", *str);
 		while ((*str)[j] != '$' && !ft_isspace((*str)[j]) && !ft_isquote((*str)[j]) && (*str)[j])
 			j++;
 		tmp = ft_strldup(*str, j);
-		printf("%d len\n", j);
 		(*str) += j;
 		tmp = parse_var_env(tmp);
 		j = 0;
@@ -85,8 +82,9 @@ void	ft_exec(char **array)
 	while (*array)
 	{
 		ptr = parse_array(*array);
-		printf("%s\n", ptr);
+		printf("%s ", ptr);
 		(array)++;
 	}
+		printf("\n");
 
 }
