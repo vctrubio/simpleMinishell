@@ -33,17 +33,10 @@
 # define ERROR_127 127
 
 
-typedef struct	s_array //rubich
+typedef struct	s_array
 {
 	char			*content;
-	bool			*d_quote;
-	bool			*s_quote;
 	struct s_array	*next;
-	struct s_array	*linked;
-	// int				link_next;
-	// bool			single_quote; //single quote
-	// bool			db_quote;	//doube quote
-//	bool			join_next; //is the next one "this"isrelated$time (TRUE)
 }				t_array;
 
 typedef enum	e_type
@@ -89,7 +82,8 @@ t_shell		*get_shell(void);
 void		ft_minishell(void);
 //minishell2.0
 char	**ft_list_to_array(t_list *l);
-
+//execute
+void	ft_exec(char **array);
 //parse
 void	init_parse(char *buffer);
 //parseBuffer
@@ -127,6 +121,7 @@ char	*ft_strldupimp(char *str, int i, int j);
 char	*ft_strldup(char *str, int l);
 char	*ft_strfdup(char *str, int f);
 int		r_size(char *s);
+bool	ft_isquote(char c);
 //utilPrint
 void 	print_arrays(char **a);
 void	print_tarrays(t_array *a);
@@ -141,7 +136,7 @@ void	shell_ll_to_envp(void);
 void	parse_envp_to_ll(char **e, t_ll **l);
 void	shell_envp_to_ll(void);
 char	*rtn_envp_from_ll(t_ll *l);
-
+char		*parse_var_env(char *str);
 /*
 //utilMyUtil.c
 bool  	no_quotes(t_array *a);

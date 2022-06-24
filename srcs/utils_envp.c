@@ -4,6 +4,25 @@ void	shell_ll_to_envp(void);
 void	parse_envp_to_ll(char **e, t_ll **l);
 void	shell_envp_to_ll(void);
 char	*rtn_envp_from_ll(t_ll *l);
+char	*parse_var_env(char *str);
+
+
+char		*parse_var_env(char *str)
+{
+	t_ll	*lst;
+
+	lst = get_shell()->env;
+	while (lst)
+	{
+		// printf("Search |%s|%s|\n", str, lst->name);
+		if (ft_strexact(str, lst->name))
+			return (lst->content);
+		lst = lst->next;
+	}
+	return ("");
+}
+
+
 
 char	*rtn_envp_from_ll(t_ll *l)
 {

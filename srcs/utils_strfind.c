@@ -4,6 +4,14 @@ char	*ft_strldupimp(char *str, int i, int j);
 char  *ft_strldup(char *str, int l);
 char  *ft_strfdup(char *str, int f);
 int		r_size(char *s);
+bool	ft_isquote(char c);
+
+bool	ft_isquote(char c)
+{
+	if (c == '\'' || c == '"')
+		return (true);
+	return (false);
+}
 
 int		r_size(char *s)
 {

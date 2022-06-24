@@ -4,6 +4,7 @@ bool  ft_strlook(char *str, char *look); //str look for set of character
 bool	ft_strexact(char *s1, char *s2); //if its exactly the same
 bool  ft_strexact_abs(char *s1, char *s2); //if its exactly the same- but alpha
 bool  ft_isspace(char c);
+
 bool  ft_strlook_char(char *str, char l)
 {
   int i;

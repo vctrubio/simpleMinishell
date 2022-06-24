@@ -25,6 +25,21 @@ int		ft_scan_content(char *str)
 
 
 
+void	array_into_tokens(char **a) // return false if error
+{
+	//HERE
+	//goal, try and ge heredoc input
+	int		i;
+	char	*ptr;
+
+	i = 0;
+	while(a[i])
+	{
+		ptr = parse_array(a[i]);
+		i++;
+	}
+
+}
 
 
 

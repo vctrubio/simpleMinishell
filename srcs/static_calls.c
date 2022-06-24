@@ -11,7 +11,6 @@ t_array *ft_store_tarry(t_array *a)
 	return (&storage);
 }
 
-
 t_shell	*get_shell(void)
 {
 	static t_shell	shell;
