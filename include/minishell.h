@@ -32,6 +32,7 @@
 # define IS_DIRECTORY 126
 # define ERROR_127 127
 
+
 typedef struct	s_array //rubich
 {
 	char			*content;
