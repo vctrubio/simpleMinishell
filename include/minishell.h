@@ -116,7 +116,7 @@ int ft_pipe(char *cmd, char **agv);
 
 
 //utilStrExact
-bool  	ft_strlook_char(char *str, char l);
+int  	ft_strcount_char(char *str, char l);
 bool  	ft_strlook(char *str, char *look);
 bool	ft_strexact(char *s1, char *s2);
 bool	ft_strexact_abs(char *s1, char *s2);

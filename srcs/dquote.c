@@ -3,21 +3,15 @@
 void	ft_dquote(char **output, char c)
 {
 	char	*buff;
-	bool	even_quotation;
+	char	*tmp;
 	int		i;
 
-	i = ft_strlen(*output);
-	even_quotation = false; //flag: we have already 1 ", we need an even number of "
+	i = 1; //flag: we have already 1 ", we need an even number of "
 	buff = readline("dquote> ");
 	add_history(buff);
-	while (*buff)
-	{
-		if (*buff == c)
-			even_quotation = !even_quotation;
-		(*output)[i++] = *buff;
-		buff++;
-	}
-	if (even_quotation == false)
+	tmp = ft_strdup(buff);
+	ft_stradd(&(*output), tmp);
+	i += ft_strcount_char(tmp, c);
+	if (i % 2 != 0)
 		ft_dquote(output, c);
-	//slight errror when there is a bit too many.... to check it out
 }
