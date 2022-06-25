@@ -128,6 +128,7 @@ char	*ft_strfdup(char *str, int f);
 int		r_size(char *s);
 bool	ft_isquote(char c);
 //utilsStr
+void 		ft_stradd(char **str, char *add);
 int			count_words(char *str, char c);
 char		**ft_strsplit(char const *str, char c);
 //utilPrint
@@ -147,36 +148,5 @@ char		*parse_var_env(char *str);
 
 
 
-void 	ft_stradd(char **str, char *add);
-
-
-
-/*
-//utilMyUtil.c
-bool  	no_quotes(t_array *a);
-char	*ft_strldupimp(char *str, int i, int j);
-char	*ft_strldup(char *str, int l);
-char	*ft_strfdup(char *str, int f);
-bool 	ft_strlook(char *str, char *look);
-bool  	ft_strlook_char(char *str, char l);
-bool	ft_strexact(char *s1, char *s2);
-bool	ft_strexact_abs(char *s1, char *s2);
-void	vars_to_array(t_args **arr, t_var *var);
-
-//utilPrint
-void  print_arrays(char **a);
-void  print_targs(t_args *a);
-void  print_tkn(t_token *t);
-void  print_var(t_var *v);
-void  print_array(t_array *a);
-
-//free
-void	free_variables(t_var **vars);
-void	free_str(char *str);
-void	free_array(t_array **arr);
-void	free_tokens(t_token **tokens);
-int		free_minishell(t_minishell **shell);
-void	free_arrays(char **arr);
-*/
 
 #endif

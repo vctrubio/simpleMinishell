@@ -6,8 +6,7 @@ void	shell_envp_to_ll(void);
 char	*rtn_envp_from_ll(t_ll *l);
 char	*parse_var_env(char *str);
 
-
-char		*parse_var_env(char *str)
+char		*parse_var_env(char *str) //returns $PWD into (User/v/Home)
 {
 	t_ll	*lst;
 
@@ -22,9 +21,7 @@ char		*parse_var_env(char *str)
 	return ("");
 }
 
-
-
-char	*rtn_envp_from_ll(t_ll *l)
+char	*rtn_envp_from_ll(t_ll *l) //returns path=mypath
 {
 	char	*tmp;
 	char	*str;
@@ -37,7 +34,7 @@ char	*rtn_envp_from_ll(t_ll *l)
 }
 
 
-void	shell_ll_to_envp(void)
+void	shell_ll_to_envp(void) 
 {
 	char	**old_envp;
 	char	**new_envp;
@@ -53,7 +50,7 @@ void	shell_ll_to_envp(void)
 		new_envp[i++] = rtn_envp_from_ll(l);	
 		l = l->next;
 	}
-	//print_arrays(new_envp); working
+	//print_arrays(new_envp); working //to work on
 }
 
 void	parse_envp_to_ll(char **e, t_ll **l)

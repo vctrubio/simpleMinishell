@@ -25,9 +25,8 @@ void	ft_exec(t_tkn *tkn)
 	i = 0;
 	while (tkn)
 	{
-		
 		tkn = tkn->next;
 	}
 
-	printf("\n");
+	// printf("\n");
 }

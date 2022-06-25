@@ -10,7 +10,7 @@ int		ft_strcount_char(char *str, char l)
 	int i;
 
 	i = 0;
-	if (!str || !l)  
+	if (!str || !l)
 		return (0);
 	while (*str)
 	{
