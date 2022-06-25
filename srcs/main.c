@@ -29,15 +29,18 @@ int main(int argc, char **argv, char **envp)
 		if (ft_strexact(buff, "exit"))
 			break;
 		add_history(buff);
-		buff_array = buffer_into_array(buff);
-		// print_arrays(buff_array);
-		tkn = array_into_tokens(buff_array);
-		// print_tkn(tkn);
+		// parse_array(buff);
+		printf("%s\n", parse_array(buff));
+		// buff_array = buffer_into_array(buff);
 
-		ft_exec(tkn);
+		// // print_arrays(buff_array);
+		// tkn = array_into_tokens(buff_array);
+		// // print_tkn(tkn);
+
+		// ft_exec(tkn);
 	
-		//validate
-		free_str(buff);
+		// //validate
+		// free_str(buff);
 		free(buff_array);
 		buff_array = NULL;
 		// free_arrays(buff_array);

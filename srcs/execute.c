@@ -25,8 +25,11 @@ void	ft_exec(t_tkn *tkn)
 	i = 0;
 	while (tkn)
 	{
+		// if (ft_enum_token(tkn->cmd) == IS_CMD)
+			ft_pipe(tkn->cmd, tkn->args);
 		// ptr = parse_array(*array);
 		tkn = tkn->next;
 	}
+
 	printf("\n");
 }
