@@ -32,23 +32,18 @@
 # define IS_DIRECTORY 126
 # define ERROR_127 127
 
-
-typedef struct	s_array
-{
-	char			*content;
-	struct s_array	*next;
-}				t_array;
-
 typedef enum	e_type
 {
+	NOTVALID,
 	IS_CMD,
 	IS_RDR_IN,
 	IS_RDR_OUT,
 	IS_HEREDOC,
 	IS_PIPE,
+	IS_PATH,
+	IS_SQUOTE,
 	// IS_ENV,
 	// SKIP,
-	NOTVALID,
 }				e_type;
 
 typedef struct	s_linklist
@@ -60,9 +55,9 @@ typedef struct	s_linklist
 
 typedef struct	s_token
 {
-	t_array			*cmd;
-	t_array			**args;
-	char			*exepath;
+	char			*cmd;
+	char			**args;
+	char			*cmd_path;
 	e_type			type;
 	struct s_token	*next;
 }				t_tkn;
@@ -83,24 +78,30 @@ void		ft_minishell(void);
 //minishell2.0
 char	**ft_list_to_array(t_list *l);
 //execute
-void	ft_exec(char **array);
+void	ft_exec(t_tkn *tkn);
 //parse
 void	init_parse(char *buffer);
+//parseArray
+void	dollar_for_money(char **out, char **str);
+char	*parse_array(char *str);
 //parseBuffer
 char	*buffer_quotes(char **buff, char c, char *str, int i);
 char	*buffer_scan_for_quotes(char *str);
 char	*buffer_to_string(char **buff);
 char	**buffer_into_array(char *str);
+//parseToken
+e_type	ft_enum_token(char *t);
+bool	ft_special_char(char *str);
+t_tkn	*array_into_tokens(char **array);
+t_tkn	*ft_evalute_single_token(char **a, int *index);
 
 //memoryMalloc
-t_array	*rtn_t_array(void);
-t_tkn	*rtn_token(void);
+t_tkn	*rtn_token(char *cmd);
 //signals
 void	init_termios_n_signal(void);
 //free
 void	free_str(char *str);
 void	free_arrays(char **arr);
-void	free_tarrays(t_array **t);
 //dquote
 void	ft_dquote(char **str, char c);
 //prompt
@@ -108,7 +109,11 @@ char	*get_usr(void);
 char	*ft_prompt(void);
 //staticCalls
 t_shell	*get_shell(void);
-t_array *ft_store_tarry(t_array *a);
+
+//pipex
+char	*find_cmd_path(char *str);
+int ft_pipe(char *cmd, char **agv);
+
 
 //utilStrExact
 bool  	ft_strlook_char(char *str, char l);
@@ -122,9 +127,11 @@ char	*ft_strldup(char *str, int l);
 char	*ft_strfdup(char *str, int f);
 int		r_size(char *s);
 bool	ft_isquote(char c);
+//utilsStr
+int			count_words(char *str, char c);
+char		**ft_strsplit(char const *str, char c);
 //utilPrint
 void 	print_arrays(char **a);
-void	print_tarrays(t_array *a);
 void	print_ll(t_ll *v);
 void  print_tkn(t_tkn *t);
 //utilsLinkList
@@ -134,9 +141,16 @@ void	ll_add_content(t_ll **head, char *name, char *content);
 //utilsENVP
 void	shell_ll_to_envp(void);
 void	parse_envp_to_ll(char **e, t_ll **l);
-void	shell_envp_to_ll(void);
+void	ft_shell_envp_to_ll(void);
 char	*rtn_envp_from_ll(t_ll *l);
 char		*parse_var_env(char *str);
+
+
+
+void 	ft_stradd(char **str, char *add);
+
+
+
 /*
 //utilMyUtil.c
 bool  	no_quotes(t_array *a);
@@ -148,7 +162,6 @@ bool  	ft_strlook_char(char *str, char l);
 bool	ft_strexact(char *s1, char *s2);
 bool	ft_strexact_abs(char *s1, char *s2);
 void	vars_to_array(t_args **arr, t_var *var);
-void 	ft_stradd(char **str, char *add);
 
 //utilPrint
 void  print_arrays(char **a);

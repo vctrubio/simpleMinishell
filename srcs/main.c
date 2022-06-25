@@ -1,29 +1,27 @@
 #include "../include/minishell.h"
-
-typedef struct s_tokens
-{
-	char	*cmd;
-	char	*path;
-	char	*args;
-	e_type	type;
-	struct s_token	*next;
-}				t_tokens;
-
-
-
+/*
+	look for |<>
+*/
 
 int main(int argc, char **argv, char **envp)
 {
+
+	t_shell	*shell;
+	shell = get_shell();
+	shell->ec = -22;
+	parse_envp_to_ll(envp, &shell->env);
+	
+	// char *cmd;
+	// cmd = "ls";
+	// ft_pipe(cmd, argv);
+
 	char 	*buff;
 	char	**buff_array;
-	t_shell	*shell;
+	t_tkn	*tkn;
 
 	if (argc != 1)
 		return (ERROR_127);
 	init_termios_n_signal();
-	shell = get_shell();
-	shell->ec = -22;
-	parse_envp_to_ll(envp, &shell->env);
 
 	while (42)
 	{
@@ -33,12 +31,15 @@ int main(int argc, char **argv, char **envp)
 		add_history(buff);
 		buff_array = buffer_into_array(buff);
 		// print_arrays(buff_array);
-		
-		// array_into_tokens(buff_array);
-		ft_exec(buff_array);
+		tkn = array_into_tokens(buff_array);
+		// print_tkn(tkn);
 
+		ft_exec(tkn);
+	
 		//validate
 		free_str(buff);
+		free(buff_array);
+		buff_array = NULL;
 		// free_arrays(buff_array);
 	}
 }

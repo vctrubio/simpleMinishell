@@ -53,6 +53,15 @@ char	*buffer_to_string(char **buff)
 		i = ft_strlen(str);
 		if (ft_isspace(**buff))
 			break;
+		if ((**buff == '<' || **buff == '>' || **buff == '|'))
+		{
+			if (i != 0)
+				return (str);
+			str[i++] = *(*buff)++;
+			if (**buff == str[i - 1])
+				str[i++] = *(*buff)++;
+			return (str);
+		}
 		if ((**buff == '\'' || **buff == '"') && *(*buff + 1) == **buff)
 		{
 			(*buff)++; (*buff)++;
@@ -76,12 +85,12 @@ char	**buffer_into_array(char *str)
 	a = malloc(sizeof(char) * l + 1);
 	while (*str)
 	{
+		// printf("EVAULTE %s\n", str);
 		while (ft_isspace(*str))
 			str++;
 		if (!str)
 			break;
 		a[i++] = ft_strdup(buffer_to_string(&str)); //printf("a copied %s\n", a[i - 1]);
-		str++;
 	}
 	a[i] = 0;
 	return(a);

@@ -74,7 +74,7 @@ void	parse_envp_to_ll(char **e, t_ll **l)
 	}
 }
 
-void	shell_envp_to_ll(void)
+void	ft_shell_envp_to_ll(void)
 {
 	char	**envp;
 	t_ll	**l;
