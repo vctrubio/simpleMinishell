@@ -1,8 +1,8 @@
 #include "../include/minishell.h"
 e_type	ft_enum_token(char *t);
 bool	ft_special_char(char *str);
-t_tkn	*array_into_tokens(char **array);
 t_tkn	*ft_evalute_single_token(char **a, int *index);
+void	array_into_tokens(char **array);
 
 bool	ft_special_char(char *str)
 {
@@ -31,7 +31,6 @@ bool	ft_check_builtin(char *str)
 		return (true);
 	return (false);
 }
-
 
 
 e_type	ft_enum_token(char *t)
@@ -73,7 +72,7 @@ t_tkn	*ft_evalute_single_token(char **a, int *index)
 	return (tkn);
 }
 
-t_tkn	*array_into_tokens(char **array)
+void	array_into_tokens(char **array)
 {
 	t_tkn	*head;
 	t_tkn	*next;
@@ -88,7 +87,7 @@ t_tkn	*array_into_tokens(char **array)
 	if (ft_enum_token(head->cmd) == IS_CMD)
 	{
 		while (array[i] && !ft_special_char(array[i]))
-			head->args[j++] = parse_array(array[i++]);
+			head->args[j++] = ft_strdup(array[i++]);
 	}
 	while (array[i])
 	{
@@ -97,7 +96,7 @@ t_tkn	*array_into_tokens(char **array)
 		{
 			j = 0;
 			while (array[i] && !ft_special_char(array[i]))
-				next->args[j++] = parse_array(array[i++]);
+				next->args[j++] = ft_strdup(array[i++]);
 		}
 		if (!head->next)
 			head->next = next;
@@ -105,6 +104,6 @@ t_tkn	*array_into_tokens(char **array)
 			prev->next = next;
 		prev = next;
 	}
+	get_shell()->tkn = head;
 	// print_tkn(head);
-	return (head);
 }

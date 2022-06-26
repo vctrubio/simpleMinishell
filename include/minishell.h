@@ -32,6 +32,21 @@
 # define IS_DIRECTORY 126
 # define ERROR_127 127
 
+typedef enum	e_pipe_cmd //pipecommad
+{
+	RDR_IN,
+	RDR_OUT,
+	RDR_APP,
+	RDR_HRE,
+}				e_p;
+
+typedef struct	s_pipe
+{
+	int		fd[2];
+	int		pid;
+	e_p		pcmd;
+}				t_pipe;
+
 typedef enum	e_type
 {
 	NOTVALID,
@@ -61,13 +76,13 @@ typedef struct	s_token
 	struct s_token	*next;
 }				t_tkn;
 
-
 typedef struct s_minishell
 {
 	char	**envp;	//envp used for execution
 	// t_ll	*var;	//used for local var ie: $var=variables
 	t_ll	*env;	//link_list to save envps
 	t_tkn	*tkn;
+	int		count_tkn;
 	int	ec; //exitcode
 }		t_shell;
 
@@ -77,7 +92,7 @@ void		ft_minishell(void);
 //minishell2.0
 char	**ft_list_to_array(t_list *l);
 //execute
-void	ft_exec(t_tkn *tkn);
+void	ft_exec(void);
 //parse
 void	init_parse(char *buffer);
 //parseArray
@@ -91,8 +106,8 @@ char	**buffer_into_array(char *str);
 //parseToken
 e_type	ft_enum_token(char *t);
 bool	ft_special_char(char *str);
-t_tkn	*array_into_tokens(char **array);
 t_tkn	*ft_evalute_single_token(char **a, int *index);
+void	array_into_tokens(char **array);
 
 //memoryMalloc
 t_tkn	*rtn_token(char *cmd);
@@ -112,7 +127,8 @@ t_shell	*get_shell(void);
 //pipex
 char	*find_cmd_path(char *str);
 int ft_pipe(char *cmd, char **agv);
-
+//validate
+void	ft_validate(void);
 
 //utilStrExact
 int  	ft_strcount_char(char *str, char l);

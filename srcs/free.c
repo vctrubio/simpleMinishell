@@ -19,6 +19,8 @@ void	free_arrays(char **arr)
 		free_str(arr[i]);
 		i++;
 	}
+	free(arr);
+	arr = NULL;
 }
 
 //MORE TO DO

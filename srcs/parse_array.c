@@ -53,7 +53,7 @@ void	ft_db_quote(char **out, char **str)
 	while (**str != '"' && **str)
 	{
 		i = ft_strlen(*out);
-		if (**str == '$')
+		if (**str == '$' && (**str + 1 != '\'' || **str + 1 != '"')) //edge case
 			dollar_for_money(out, str);
 		else
 			(*out)[i] = *(*str)++;
