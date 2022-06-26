@@ -39,8 +39,7 @@ int main(int argc, char **argv, char **envp)
 
 			ft_exec(tkn);
 
-			free(buff_array);
-			buff_array = NULL;
+			free_arrays(buff_array);
 		}
 		free(buff);
 	}

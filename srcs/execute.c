@@ -1,30 +1,22 @@
 #include "../include/minishell.h"
 
-void	exec_ptr(char *str)
+void	ft_execute_single_tkn(t_tkn *tkn)
 {
-	char	**env;
-
-	env = get_shell()->envp;
-	/*
-	-path 
-	-cmd
-	-args
-	-direction
-	-pipe
-	*/
-	printf("exec_ptr: %s \n", str);
+	ft_pipe(tkn->cmd, tkn->args);
 }
 
-
-//simple ls command
 void	ft_exec(t_tkn *tkn)
 {
-	char	*ptr;
+	t_tkn	*ptr;
+	ptr = tkn;
+	print_tkn(ptr);
+	t_tkn	*next;
 	int		i;
 
-	i = 0;
 	while (tkn)
 	{
+		next = tkn->next;
+		// ft_execute_single_tkn(tkn);
 		tkn = tkn->next;
 	}
 

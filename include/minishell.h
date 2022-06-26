@@ -36,9 +36,8 @@ typedef enum	e_type
 {
 	NOTVALID,
 	IS_CMD,
-	IS_RDR_IN,
-	IS_RDR_OUT,
-	IS_HEREDOC,
+	IS_BUILTIN,
+	IS_RDR,
 	IS_PIPE,
 	IS_PATH,
 	IS_SQUOTE,
