@@ -40,15 +40,21 @@ int ft_pipe(char *cmd, char **argv)
 	printf("ft_pipe: %s\n", cmd);
 	char	*cmd_path;
 	int		fd[2];
-	int		pid;
+	pid_t		pid;
+
+	char	**tmp_array;
 
 	pipe(fd);
 	pid = fork();
-	if (pid == 1 && (cmd_path = find_cmd_path(cmd)))
-	{
+	if (pid == 0 && (cmd_path = find_cmd_path(cmd)))
 		execve(cmd_path, argv, get_shell()->envp);
+
+	if (pid == 1)
+	{
+		waitpid(pid, NULL, 0);
+		printf("parent ready\n");
 	}
-	else
-		printf("COMMAND NOT found\n");
+	close(fd[0]);
+	close(fd[1]);
 	return (0);
 }

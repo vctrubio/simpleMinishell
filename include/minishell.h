@@ -47,6 +47,7 @@ typedef struct	s_pipe
 	e_p		pcmd;
 }				t_pipe;
 
+
 typedef enum	e_type
 {
 	NOTVALID,

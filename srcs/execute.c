@@ -2,7 +2,7 @@
 
 void	ft_execute_single_tkn(t_tkn *tkn)
 {
-	ft_pipe(tkn->cmd, tkn->args);
+	// ft_pipe(tkn->cmd, tkn->args);
 }
 
 void	ft_exec(void)
@@ -16,6 +16,11 @@ void	ft_exec(void)
 	print_tkn(ptr);
 	printf("%d #of tokens\n", get_shell()->count_tkn);
 
+	while (ptr)
+	{
+		ft_execute_single_tkn(ptr);
+		ptr = ptr->next;
+	}
 	// printf("\n");
 }
 

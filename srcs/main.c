@@ -14,7 +14,6 @@ static void	init_shell(char **envp)
 	init_termios_n_signal();
 }
 
-
 int main(int argc, char **argv, char **envp)
 {
 	char 	*buff;
@@ -24,6 +23,7 @@ int main(int argc, char **argv, char **envp)
 		return (ERROR_127);
 	//INIT shell
 	init_shell(envp);
+
 
 	//MAIN LOOP
 	while (42)
@@ -40,13 +40,13 @@ int main(int argc, char **argv, char **envp)
 			array_into_tokens(buff_array);
 
 			//PRINT FOR DEBUGGIN
-			// print_arrays(buff_array);
+			print_arrays(buff_array);
 			// printf("--\n");
 			// print_tkn(tkn);
 
 			//step 3, EXECUTE
-			ft_validate();
-			ft_exec();
+			// ft_validate();
+			// ft_exec();
 
 			//step 4, free
 			free_arrays(buff_array);
