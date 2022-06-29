@@ -2,7 +2,7 @@
 
 void	ft_execute_single_tkn(t_tkn *tkn)
 {
-	// ft_pipe(tkn->cmd, tkn->args);
+	ft_pipe(tkn->cmd, tkn->args);
 }
 
 void	ft_exec(void)

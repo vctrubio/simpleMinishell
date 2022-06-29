@@ -42,18 +42,30 @@ int ft_pipe(char *cmd, char **argv)
 	int		fd[2];
 	pid_t		pid;
 
-	char	**tmp_array;
+	// char	**tmp_array;
+	// int		i = 0;
+	// tmp_array[i++] = cmd;
+	// while (*argv)
+	// {
+	// 	tmp_array[i++] = *argv;
+	// 	argv++;
+	// }
+	// tmp_array[i] = 0;
 
-	pipe(fd);
+	// pipe(fd);
+	// pid = fork();
+	// if (pid == 0 && ())
+
+	cmd_path = find_cmd_path(cmd);
 	pid = fork();
-	if (pid == 0 && (cmd_path = find_cmd_path(cmd)))
+	if (pid == 0)
 		execve(cmd_path, argv, get_shell()->envp);
-
-	if (pid == 1)
+	else
 	{
-		waitpid(pid, NULL, 0);
-		printf("parent ready\n");
+		printf("parent pid.\n");
+	 wait(&pid);
 	}
+
 	close(fd[0]);
 	close(fd[1]);
 	return (0);

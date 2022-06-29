@@ -122,6 +122,9 @@ void	ft_dquote(char **str, char c);
 //prompt
 char	*get_usr(void);
 char	*ft_prompt(void);
+//heredoc
+void	ft_create_heredoc(char *eof);
+void	scan_for_heredoc(void);
 //staticCalls
 t_shell	*get_shell(void);
 
