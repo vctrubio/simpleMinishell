@@ -1,6 +1,7 @@
 #include "../../includes/parse.h"
+#include "../../includes/char.h"
 
-static char	*buffer_quotes(char **buff, char c, char *str, int i)
+static char *buffer_quotes(char **buff, char c, char *str, int i)
 {
 	str[(i)++] = *(*buff)++;
 	while (**buff && **buff != c)
@@ -10,12 +11,12 @@ static char	*buffer_quotes(char **buff, char c, char *str, int i)
 	return (str);
 }
 
-static char	*buffer_scan_for_quotes(char *str)
+static char *buffer_scan_for_quotes(char *str)
 {
-	int		i; 
-	int		f;
-	char	c;
-	char	k;
+	int i;
+	int f;
+	char c;
+	char k;
 
 	f = 0;
 	k = 0;
@@ -35,10 +36,10 @@ static char	*buffer_scan_for_quotes(char *str)
 	return (str);
 }
 
-static char	*buffer_to_string(char **buff)
+static char *buffer_to_string(char **buff) // HERE
 {
-	char	*str;
-	int		i;
+	char *str;
+	int i;
 
 	str = calloc(sizeof(char), (_string().length(*buff) + 1));
 	i = 0;
@@ -46,19 +47,21 @@ static char	*buffer_to_string(char **buff)
 	{
 		i = _string().length(str);
 		if (_char().is_whitespace(**buff))
-			break ;
-		if ((**buff == '<' || **buff == '>' || **buff == '|'))
+			break;
+		if ((**buff == '<' || **buff == '>' || **buff == '|')) //_char().is_special_parse(**buff)
 		{
 			if (i != 0)
 				return (str);
 			str[i++] = *(*buff)++;
 			if (**buff == str[i - 1])
 				str[i++] = *(*buff)++;
+			// printf("rtn_str\n");
 			return (str);
 		}
 		if ((**buff == '\'' || **buff == '"') && *(*buff + 1) == **buff)
 		{
-			(*buff)++; (*buff)++;
+			(*buff)++;
+			(*buff)++;
 		}
 		if ((**buff == '\'' || **buff == '"') && (**buff + 1 != **buff))
 			str = buffer_quotes(&(*buff), **buff, str, i);
@@ -68,24 +71,28 @@ static char	*buffer_to_string(char **buff)
 	return (buffer_scan_for_quotes(str));
 }
 
-char	**buffer_into_array(char *str)
+char **buffer_into_array(char *str) //ls>ls>ls>ls //ls>>ls>>ls>>ls
 {
-	char	**a;
-	int		l;
-	int		i;
+	char **a;
+	int l;
+	int i;
 
 	i = 0;
-	l = r_size(str);
+	l = r_size(str); //echo "helo world how is everything" l is too big
+	printf("l: %d\n", l);
 	a = _memory().malloc(sizeof(char *) * (l + 1));
 	while (*str)
 	{
 		while (_char().is_whitespace(*str))
 			str++;
 		if (!str || _string().length(str) == 0)
-			break ;
+			break;
+		// printf("str ===== %s  ====\n", str);
 		a[i++] = _string().dup(buffer_to_string(&str));
+		// printf("clearstr\n");
 		// a[i++] = parse_clean(buffer_to_string(&str)); //printf("a copied %s\n", a[i - 1]);
 	}
 	a[i] = 0;
-	return(a);
+	// printf("SUCESS\n");
+	return (a);
 }

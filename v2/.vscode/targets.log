@@ -1,0 +1,612 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Mon Aug  1 22:38:59 2022
+
+# Variables
+
+# environment
+VSCODE_GIT_ASKPASS_MAIN = /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+RUBY_VERSION = ruby-2.5.3
+# automatic
+?F = $(notdir $?)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# makefile (from `Makefile', line 20)
+RST = \033[0m
+# environment
+HOMEBREW_NO_ANALYTICS = 1
+# environment
+LC_CTYPE = UTF-8
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+rvm_path = /Users/V/.rvm
+# makefile (from `Makefile', line 67)
+INCLUDES = -I$(INC_DIR)
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/V/Documents/42/summer22/oldminishell/simpleMinishell/v2
+# makefile
+SHELL = /bin/sh
+# makefile (from `Makefile', line 61)
+BIN = ${BIN_DIR}/${NAME}
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 66)
+CFLAGS = -Werror -Wall -Wextra
+# environment
+VSCODE_PID = 44923
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 26)
+SRCS = ${SRC_DIR}/minishell.c ${SRC_DIR}/char/char.c ${SRC_DIR}/char/util_1.c ${SRC_DIR}/char/util_2.c ${SRC_DIR}/command/command.c ${SRC_DIR}/command/util_1.c ${SRC_DIR}/command/util_2.c ${SRC_DIR}/command/util_3.c ${SRC_DIR}/command/util_4.c ${SRC_DIR}/env/env.c ${SRC_DIR}/memory/memory.c ${SRC_DIR}/memory/util_1.c ${SRC_DIR}/memory/util_2.c ${SRC_DIR}/memory/util_3.c ${SRC_DIR}/string/string.c ${SRC_DIR}/string/util_1.c ${SRC_DIR}/string/util_2.c ${SRC_DIR}/string/util_3.c ${SRC_DIR}/string/util_4.c ${SRC_DIR}/string/util_5.c ${SRC_DIR}/string/util_6.c ${SRC_DIR}/parse/dquote.c ${SRC_DIR}/parse/parse.c ${SRC_DIR}/parse/util_array.c ${SRC_DIR}/parse/util_debuging.c ${SRC_DIR}/parse/util_parse.c ${SRC_DIR}/parse/util_str.c ${SRC_DIR}/static/shell.c ${SRC_DIR}/prompt/prompt.c ${SRC_DIR}/termios/termios.c 
+# makefile (from `Makefile', line 59)
+OBJ_DIR = ${BUILD_DIR}/obj
+# environment
+rvm_ruby_mode = 
+# environment
+rvm_ruby_make = 
+# makefile (from `Makefile', line 62)
+OBJS = $(subst .c,.o,$(subst ${SRC_DIR},${OBJ_DIR},${SRCS}))
+# environment
+VSCODE_CWD = /Users/V/Documents/42/summer22/oldminishell/simpleMinishell/v3
+# environment
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.gb6g8zsSo8/Render
+# environment
+rvm_pretty_print_flag = 
+# environment
+PATH = /Users/V/.rvm/gems/ruby-2.5.3/bin:/Users/V/.rvm/gems/ruby-2.5.3@global/bin:/Users/V/.rvm/rubies/ruby-2.5.3/bin:/usr/local/opt/openssl@1.1/bin:./bin:./node_modules/.bin:/Users/V/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/V/.zsh/misc:/Users/V/.rvm/gems/ruby-2.5.3/bin:/Users/V/.rvm/gems/ruby-2.5.3@global/bin:/Users/V/.rvm/rubies/ruby-2.5.3/bin:/usr/local/opt/openssl@1.1/bin:./bin:./node_modules/.bin:/Users/V/.rbenv/bin:/Users/V/.fig/bin:/usr/local/sbin:/Users/V/.rvm/bin:/usr/local/sbin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 60)
+BIN_DIR = ${BUILD_DIR}/bin
+# environment
+rvm_niceness = 
+# environment
+FIG_CHECKED_PROMPTS = 1
+# environment
+rvm_only_path_flag = 
+# environment
+rvm_gemstone_package_file = 
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+rvm_alias_expanded = 
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `Makefile', line 17)
+GRN = \033[0;32m
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.NxyIfCw6IL/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+TTY = /dev/ttys001
+# environment
+FIG_ENV_VAR = 1
+# environment
+rvm_bin_path = /Users/V/.rvm/bin
+# environment
+PWD = /Users/V/Documents/42/summer22/oldminishell/simpleMinishell/v2
+# environment
+GEM_HOME = /Users/V/.rvm/gems/ruby-2.5.3
+# environment
+rvm_docs_type = 
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# makefile (from `Makefile', line 23)
+INC_DIR = ./includes
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/V
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/V/Library/Application Support/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+# environment
+LOGNAME = V
+# environment
+BUNDLER_EDITOR = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+rvm_proxy = 
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+rvm_ruby_bits = 
+# environment
+MAKELEVEL := 0
+# environment
+GEM_PATH = /Users/V/.rvm/gems/ruby-2.5.3:/Users/V/.rvm/gems/ruby-2.5.3@global
+# environment
+XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
+# environment
+rvm_ruby_make_install = 
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+IRBRC = /Users/V/.rvm/rubies/ruby-2.5.3/.irbrc
+# environment
+SHLVL = 5
+# environment
+rvm_quiet_flag = 
+# makefile (from `Makefile', line 65)
+CC = gcc
+# makefile (from `Makefile', line 58)
+BUILD_DIR = ./build
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = V
+# makefile
+.DEFAULT_GOAL := all
+# environment
+TERM_SESSION_ID = C49C959B-0F53-4391-9BB7-6398AD34081C
+# makefile (from `Makefile', line 14)
+NAME = minishell
+# environment
+rvm_version = 1.29.10-next (master)
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# environment
+VSCODE_GIT_ASKPASS_EXTRA_ARGS = --ms-enable-electron-run-as-node
+# environment
+TERM_PROGRAM = vscode
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/dx/1mwgg8zn23964hxvr_jsm4vh0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/V/Library/Application Support/Code/1.69.2-main.sock
+# environment
+VSCODE_GIT_ASKPASS_NODE = /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper
+# makefile (from `Makefile', line 19)
+RED = \033[0;31m
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+TERM_PROGRAM_VERSION = 1.69.2
+# environment
+rvm_script_name = 
+# environment
+XPC_SERVICE_NAME = 0
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+rvm_sdk = 
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+GIT_ASKPASS = /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh
+# default
+MAKEFILES := 
+# makefile (from `Makefile', line 24)
+SRC_DIR = ./sources
+# automatic
+<F = $(notdir $<)
+# environment
+rvm_silent_flag = 
+# environment
+rvm_gemstone_url = 
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+rvm_bin_flag = 
+# automatic
+^F = $(notdir $^)
+# environment
+rvm_prefix = /Users/V
+# default
+SUFFIXES := 
+# makefile (from `Makefile', line 18)
+GRNGRN = \033[38;5;46m
+# environment
+rvm_ruby_file = 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+VSCODE_GIT_IPC_HANDLE = /var/folders/dx/1mwgg8zn23964hxvr_jsm4vh0000gn/T/vscode-git-0605d33b0c.sock
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+rvm_use_flag = 
+# environment
+rvm_hook = 
+# environment
+MY_RUBY_HOME = /Users/V/.rvm/rubies/ruby-2.5.3
+# environment
+rvm_nightly_flag = 
+# variable set hash-table stats:
+# Load=123/1024=12%, Rehash=0, Collisions=20/196=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777220, inode 8636013728): 8 files, no impossibilities.
+# sources (device 16777220, inode 8636013768): 14 files, no impossibilities so far.
+# ./sources (device 16777220, inode 8636013768): 14 files, no impossibilities so far.
+
+ 
+# 36 files, no impossibilities in 3 directories.
+
+# Implicit Rules
+
+build/obj/%.o: ./sources/%.c
+#  commands to execute (from `Makefile', line 75):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+build/obj/termios/termios.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/parse/parse.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: build minishell
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+
+build/obj/minishell.o: sources/minishell.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `minishell'
+#  Last modified 2022-07-12 19:04:46
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := build/obj/minishell.o
+# automatic
+# % := 
+# automatic
+# * := minishell
+# automatic
+# + := sources/minishell.c
+# automatic
+# | := 
+# automatic
+# < := sources/minishell.c
+# automatic
+# ^ := sources/minishell.c
+# automatic
+# ? := sources/minishell.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/18=6%
+#  commands to execute (from `Makefile', line 75):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+build/obj/memory/util_1.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/command/util_3.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all run clean fclean re
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/parse/util_debuging.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/char/util_2.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/char/char.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/string/util_3.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/parse/util_str.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/prompt/prompt.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-12 19:24:55
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+build/obj/memory/util_2.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-12 19:03:37
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 80):
+	@mkdir -p ${BUILD_DIR}
+	@mkdir -p ${BIN_DIR}
+	@mkdir -p ${OBJ_DIR}
+	
+
+# Not a target:
+build/obj/command/command.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/parse/util_parse.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/string/util_6.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/string/util_5.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+minishell: build/obj/minishell.o build/obj/char/char.o build/obj/char/util_1.o build/obj/char/util_2.o build/obj/command/command.o build/obj/command/util_1.o build/obj/command/util_2.o build/obj/command/util_3.o build/obj/command/util_4.o build/obj/env/env.o build/obj/memory/memory.o build/obj/memory/util_1.o build/obj/memory/util_2.o build/obj/memory/util_3.o build/obj/string/string.o build/obj/string/util_1.o build/obj/string/util_2.o build/obj/string/util_3.o build/obj/string/util_4.o build/obj/string/util_5.o build/obj/string/util_6.o build/obj/parse/dquote.o build/obj/parse/parse.o build/obj/parse/util_array.o build/obj/parse/util_debuging.o build/obj/parse/util_parse.o build/obj/parse/util_str.o build/obj/static/shell.o build/obj/prompt/prompt.o build/obj/termios/termios.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+#  commands to execute (from `Makefile', line 72):
+	@$(CC) $(CFLAGS) -lreadline $^ -o $(BIN)
+	
+
+# Not a target:
+build/obj/memory/memory.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/minishell.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-12 19:24:55
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+fclean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@rm -rf $(BUILD_DIR)
+	@printf "$(RED)fclean done\e[0m\n"
+	
+
+# Not a target:
+build/obj/env/env.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/string/string.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/command/util_1.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/string/util_1.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+run: all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 85):
+	@echo "Running ${NAME}"
+	@./${BIN}
+	
+
+# Not a target:
+build/obj/memory/util_3.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 89):
+	@rm -rf $(OBJ_DIR)
+	@printf "\e[31mclean done\e[0m\n"
+	
+
+# Not a target:
+build/obj/parse/dquote.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/command/util_2.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/string/util_2.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/command/util_4.o:
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/static/shell.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/string/util_4.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/parse/util_array.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/obj/char/util_1.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=42/1024=4%, Rehash=0, Collisions=4/98=4%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Mon Aug  1 22:38:59 2022
+
+ 

@@ -1,0 +1,98 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/V/Documents/42/summer22/oldminishell/simpleMinishell/v2'
+mkdir -p ./build
+mkdir -p ./build/bin
+mkdir -p ./build/obj
+mkdir -p build/obj/
+gcc -Werror -Wall -Wextra -I./includes -c sources/minishell.c -o  build/obj/minishell.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/char/
+gcc -Werror -Wall -Wextra -I./includes -c sources/char/char.c -o  build/obj/char/char.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/char/
+gcc -Werror -Wall -Wextra -I./includes -c sources/char/util_1.c -o  build/obj/char/util_1.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/char/
+gcc -Werror -Wall -Wextra -I./includes -c sources/char/util_2.c -o  build/obj/char/util_2.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/command/
+gcc -Werror -Wall -Wextra -I./includes -c sources/command/command.c -o  build/obj/command/command.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/command/
+gcc -Werror -Wall -Wextra -I./includes -c sources/command/util_1.c -o  build/obj/command/util_1.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/command/
+gcc -Werror -Wall -Wextra -I./includes -c sources/command/util_2.c -o  build/obj/command/util_2.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/command/
+gcc -Werror -Wall -Wextra -I./includes -c sources/command/util_3.c -o  build/obj/command/util_3.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/command/
+gcc -Werror -Wall -Wextra -I./includes -c sources/command/util_4.c -o  build/obj/command/util_4.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/env/
+gcc -Werror -Wall -Wextra -I./includes -c sources/env/env.c -o  build/obj/env/env.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/memory/
+gcc -Werror -Wall -Wextra -I./includes -c sources/memory/memory.c -o  build/obj/memory/memory.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/memory/
+gcc -Werror -Wall -Wextra -I./includes -c sources/memory/util_1.c -o  build/obj/memory/util_1.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/memory/
+gcc -Werror -Wall -Wextra -I./includes -c sources/memory/util_2.c -o  build/obj/memory/util_2.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/memory/
+gcc -Werror -Wall -Wextra -I./includes -c sources/memory/util_3.c -o  build/obj/memory/util_3.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/string/
+gcc -Werror -Wall -Wextra -I./includes -c sources/string/string.c -o  build/obj/string/string.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/string/
+gcc -Werror -Wall -Wextra -I./includes -c sources/string/util_1.c -o  build/obj/string/util_1.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/string/
+gcc -Werror -Wall -Wextra -I./includes -c sources/string/util_2.c -o  build/obj/string/util_2.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/string/
+gcc -Werror -Wall -Wextra -I./includes -c sources/string/util_3.c -o  build/obj/string/util_3.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/string/
+gcc -Werror -Wall -Wextra -I./includes -c sources/string/util_4.c -o  build/obj/string/util_4.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/string/
+gcc -Werror -Wall -Wextra -I./includes -c sources/string/util_5.c -o  build/obj/string/util_5.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/string/
+gcc -Werror -Wall -Wextra -I./includes -c sources/string/util_6.c -o  build/obj/string/util_6.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/parse/
+gcc -Werror -Wall -Wextra -I./includes -c sources/parse/dquote.c -o  build/obj/parse/dquote.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/parse/
+gcc -Werror -Wall -Wextra -I./includes -c sources/parse/parse.c -o  build/obj/parse/parse.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/parse/
+gcc -Werror -Wall -Wextra -I./includes -c sources/parse/util_array.c -o  build/obj/parse/util_array.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/parse/
+gcc -Werror -Wall -Wextra -I./includes -c sources/parse/util_debuging.c -o  build/obj/parse/util_debuging.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/parse/
+gcc -Werror -Wall -Wextra -I./includes -c sources/parse/util_parse.c -o  build/obj/parse/util_parse.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/parse/
+gcc -Werror -Wall -Wextra -I./includes -c sources/parse/util_str.c -o  build/obj/parse/util_str.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/static/
+gcc -Werror -Wall -Wextra -I./includes -c sources/static/shell.c -o  build/obj/static/shell.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/prompt/
+gcc -Werror -Wall -Wextra -I./includes -c sources/prompt/prompt.c -o  build/obj/prompt/prompt.o
+echo "\033[38;5;46m/\033[0m\c"
+mkdir -p build/obj/termios/
+gcc -Werror -Wall -Wextra -I./includes -c sources/termios/termios.c -o  build/obj/termios/termios.o
+echo "\033[38;5;46m/\033[0m\c"
+gcc -Werror -Wall -Wextra -lreadline build/obj/minishell.o build/obj/char/char.o build/obj/char/util_1.o build/obj/char/util_2.o build/obj/command/command.o build/obj/command/util_1.o build/obj/command/util_2.o build/obj/command/util_3.o build/obj/command/util_4.o build/obj/env/env.o build/obj/memory/memory.o build/obj/memory/util_1.o build/obj/memory/util_2.o build/obj/memory/util_3.o build/obj/string/string.o build/obj/string/util_1.o build/obj/string/util_2.o build/obj/string/util_3.o build/obj/string/util_4.o build/obj/string/util_5.o build/obj/string/util_6.o build/obj/parse/dquote.o build/obj/parse/parse.o build/obj/parse/util_array.o build/obj/parse/util_debuging.o build/obj/parse/util_parse.o build/obj/parse/util_str.o build/obj/static/shell.o build/obj/prompt/prompt.o build/obj/termios/termios.o -o ./build/bin/minishell
+make: Leaving directory `/Users/V/Documents/42/summer22/oldminishell/simpleMinishell/v2'
+ 

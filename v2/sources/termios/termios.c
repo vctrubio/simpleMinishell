@@ -5,8 +5,8 @@ static void	sig_int(int sig)
 	if (sig == SIGINT)
 	{
 		write(1, "newline\n", 8);
-		rl_replace_line("", 0);
-		rl_on_new_line();
+		// rl_replace_line("", 0);
+		// rl_on_new_line();
 		rl_redisplay();
 		get_shell()->ec = 130;
 	}

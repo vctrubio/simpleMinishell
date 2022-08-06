@@ -4,10 +4,11 @@
 void	print_arrays(char **a)
 {
   int i;
-
+	char *tmp;
   i = 0;
 	while(a[i])
 	{
-	  printf("%s\n", a[i++]);
+		tmp = parse_array(a[i++]);
+	  printf("%s\n", tmp);
 	}
 }

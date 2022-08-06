@@ -77,11 +77,12 @@ int main(int ac, char **av, char **env)
         else
             add_history(line);
         cmds = buffer_into_array(line);
-        while (*cmds)
-        {
-            _command().create(*(cmds++));
-        }
-        _command().execute();
+        print_arrays(cmds);
+        // while (*cmds)
+        // {
+        //     _command().create(*(cmds++));
+        // }
+        // _command().execute();
         free_arrays(cmds);
         free(line);
         line = NULL;

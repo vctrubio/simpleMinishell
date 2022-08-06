@@ -38,17 +38,14 @@ int		r_size(char *s)
 {
 	unsigned int len;
 
-	len = 0;
-	while (*s)
+	len = 1;
+	while ((*s)++)
 	{
-		if (_char().is_whitespace(*s))
-			++s;
-		else
-		{
-			++len;
-			while (*s && !_char().is_whitespace(*s))
-				++s;
-		}
+		++len;
+		if (*s == '>')
+			break;
+		++s;
+		
 	}
 	return (len);
 }

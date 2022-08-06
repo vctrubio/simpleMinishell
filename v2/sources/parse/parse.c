@@ -77,6 +77,7 @@ char	**buffer_into_array(char *str)
 	i = 0;
 	l = r_size(str);
 	a = _memory().malloc(sizeof(char) * l + 1);
+	printf("l: %d--\n", l);
 	while (*str)
 	{
 		while (_char().is_whitespace(*str))
@@ -87,5 +88,6 @@ char	**buffer_into_array(char *str)
 		// a[i++] = parse_array(buffer_to_string(&str)); //printf("a copied %s\n", a[i - 1]);
 	}
 	a[i] = 0;
+	// printf("SUCCESS\n");
 	return(a);
 }

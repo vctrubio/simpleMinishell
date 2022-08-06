@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaribei < joaribei@student.42lisboa.co    +#+  +:+       +#+        */
+/*   By: V <V@student.42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/21 12:38:39 by joaribei          #+#    #+#             */
-/*   Updated: 2022/07/05 17:27:24 by V                ###   ########.fr       */
+/*   Updated: 2022/08/01 22:53:01 by V                ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 
 int	main(int ac, char **av, char **env)
 {
-	int		name;
 	char	*line;
 	char	**cmds;
 
@@ -29,7 +28,7 @@ int	main(int ac, char **av, char **env)
 		return (0);
 	while (*env)
 		init_env(_string_new_hashmap(*env++));
-	init_termios();
+	// init_termios();
 	while (1)
 	{
 		line = readline(ft_prompt());
@@ -37,14 +36,16 @@ int	main(int ac, char **av, char **env)
 			continue ;
 		else
 			add_history(line);
-		cmds = _string().split_char(line, ' ');
-		while (*cmds)
-		{
-			name = _names(*cmds);
-			init_command(*cmds, _pre_functions(name), _functions(name));
-			++cmds;
-		}
-		execute_command();
+		cmds = buffer_into_array(line);
+		print_arrays(cmds);
+		// cmds = _string().split_char(line, ' ');
+		// while (*cmds)
+		// {
+		// 	name = _names(*cmds);
+		// 	init_command(*cmds, _pre_functions(name), _functions(name));
+		// 	++cmds;
+		// }
+		// execute_command();
 		free_arrays(cmds);
 		free(line);
 		line = NULL;
