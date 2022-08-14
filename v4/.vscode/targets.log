@@ -1,0 +1,1744 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Sat Aug  6 16:24:46 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+RUBY_VERSION = ruby-2.5.3
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 8)
+RST = \033[0m
+# environment
+HOMEBREW_NO_ANALYTICS = 1
+# environment
+LC_CTYPE = 
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+rvm_path = /Users/V/.rvm
+# makefile (from `Makefile', line 93)
+INCLUDES = -I$(INC_DIR)
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/V/Documents/42/summer22/oldminishell/simpleMinishell/v4
+# makefile
+SHELL = /bin/sh
+# makefile (from `Makefile', line 87)
+BIN = ${BIN_DIR}/${NAME}
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 92)
+CFLAGS = -Werror -Wall -Wextra -g -fsanitize=address
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 23)
+SRCS = ${CHAR}/is_alpha.c ${CHAR}/is_lowercase.c ${CHAR}/is_uppercase.c ${CHAR}/is_whitespace.c ${CHAR}/is_special_parse.c ${CHAR}/reference.c ${CHAR}/to_lower.c ${CHAR}/to_upper.c ${COMMAND}/add.c ${COMMAND}/cd.c ${COMMAND}/create.c ${COMMAND}/delete.c ${COMMAND}/echo.c ${COMMAND}/execute.c ${COMMAND}/export.c ${COMMAND}/function.c ${COMMAND}/g.c ${COMMAND}/greater_than.c ${COMMAND}/more_greater_than.c ${COMMAND}/name.c ${COMMAND}/pre_function.c ${COMMAND}/reference.c ${COMMAND}/system.c ${COMMAND}/token.c ${COMMAND}/unset.c ${ENV}/add.c ${ENV}/create.c ${ENV}/get.c ${ENV}/reference.c ${ENV}/size.c ${ENV}/to_double_pointer.c ${FILE}/close.c ${FILE}/create.c ${FILE}/reference.c ${MEMORY}/add.c ${MEMORY}/calloc.c ${MEMORY}/copy.c ${MEMORY}/free.c ${MEMORY}/malloc.c ${MEMORY}/realloc.c ${MEMORY}/reference.c ${MEMORY}/set.c ${PARSE}/dquote.c ${PARSE}/parse.c ${PARSE}/util_array.c ${PARSE}/util_debuging.c ${PARSE}/util_parse.c ${PARSE}/util_str.c ${SIGNAL}/reference.c ${STRING}/copy.c ${STRING}/dup.c ${STRING}/equals.c ${STRING}/is_quote.c ${STRING}/itoa.c ${STRING}/length.c ${STRING}/read_line.c ${STRING}/reference.c ${STRING}/split.c ${SRC_DIR}/minishell.c 
+# makefile (from `Makefile', line 85)
+OBJ_DIR = ${BUILD_DIR}/obj
+# makefile (from `Makefile', line 17)
+FILE = ${SRC_DIR}/file
+# makefile (from `Makefile', line 88)
+OBJS = $(subst .c,.o,$(subst ${SRC_DIR},${OBJ_DIR},${SRCS}))
+# environment
+VSCODE_CWD = /
+# makefile (from `Makefile', line 14)
+CHAR = ${SRC_DIR}/char
+# environment
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.slaOU9YIOT/Render
+# environment
+PATH = /Users/V/.rvm/gems/ruby-2.5.3/bin:/Users/V/.rvm/gems/ruby-2.5.3@global/bin:/Users/V/.rvm/rubies/ruby-2.5.3/bin:/usr/local/opt/openssl@1.1/bin:./bin:./node_modules/.bin:/Users/V/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/V/.zsh/misc:/Users/V/.fig/bin:/usr/local/sbin:/Users/V/.rvm/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 86)
+BIN_DIR = ${BUILD_DIR}/bin
+# makefile (from `Makefile', line 6)
+GRNGRN = \033[38;5;46m
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `Makefile', line 5)
+GRN = \033[0;32m
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Oq6vcGqTTY/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+rvm_bin_path = /Users/V/.rvm/bin
+# environment
+PWD = /Users/V/Documents/42/summer22/oldminishell/simpleMinishell/v4
+# makefile (from `Makefile', line 15)
+COMMAND = ${SRC_DIR}/command
+# environment
+GEM_HOME = /Users/V/.rvm/gems/ruby-2.5.3
+# makefile (from `Makefile', line 21)
+STRING = ${SRC_DIR}/string
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# makefile (from `Makefile', line 11)
+INC_DIR = ./includes
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/V
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/V/Library/Application Support/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+# environment
+LOGNAME = V
+# environment
+BUNDLER_EDITOR = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 18)
+MEMORY = ${SRC_DIR}/memory
+# environment
+GEM_PATH = /Users/V/.rvm/gems/ruby-2.5.3:/Users/V/.rvm/gems/ruby-2.5.3@global
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+IRBRC = /Users/V/.rvm/rubies/ruby-2.5.3/.irbrc
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 91)
+CC = gcc
+# makefile (from `Makefile', line 84)
+BUILD_DIR = ./build
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = V
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 2)
+NAME = minishell
+# environment
+rvm_version = 1.29.10-next (master)
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/dx/1mwgg8zn23964hxvr_jsm4vh0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/V/Library/Application Support/Code/1.69.2-main.sock
+# environment
+MallocNanoZone = 0
+# makefile (from `Makefile', line 7)
+RED = \033[0;31m
+# makefile (from `Makefile', line 19)
+PARSE = ${SRC_DIR}/parse
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = com.microsoft.VSCode.12520
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# default
+MAKEFILES := 
+# makefile (from `Makefile', line 12)
+SRC_DIR = ./sources
+# automatic
+<F = $(notdir $<)
+# environment
+PAGER = less
+# makefile (from `Makefile', line 20)
+SIGNAL = ${SRC_DIR}/signal
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# environment
+rvm_prefix = /Users/V
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# makefile (from `Makefile', line 16)
+ENV = ${SRC_DIR}/env
+# environment
+LANG = C
+# environment
+VSCODE_PID = 21036
+# environment
+MY_RUBY_HOME = /Users/V/.rvm/rubies/ruby-2.5.3
+# variable set hash-table stats:
+ 
+# Load=96/1024=9%, Rehash=0, Collisions=37/379=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# sources/char (device 16777220, inode 8637239651): 10 files, no impossibilities so far.
+# sources/signal (device 16777220, inode 8637239717): 3 files, no impossibilities so far.
+# . (device 16777220, inode 8637239564): 10 files, no impossibilities.
+# sources (device 16777220, inode 8637239645): 12 files, no impossibilities so far.
+# sources/command (device 16777220, inode 8637239699): 19 files, no impossibilities so far.
+# sources/file (device 16777220, inode 8637239669): 5 files, no impossibilities so far.
+# sources/memory (device 16777220, inode 8637239660): 10 files, no impossibilities so far.
+# sources/env (device 16777220, inode 8637239682): 8 files, no impossibilities so far.
+# sources/string (device 16777220, inode 8637239689): 11 files, no impossibilities so far.
+# sources/parse (device 16777220, inode 8637239673): 8 files, no impossibilities so far.
+# ./sources (device 16777220, inode 8637239645): 12 files, no impossibilities so far.
+
+# 108 files, no impossibilities in 11 directories.
+
+# Implicit Rules
+
+build/obj/%.o: ./sources/%.c
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+build/obj/command/cd.o: sources/command/cd.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/cd'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/char/reference.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/command/pre_function.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/char/is_whitespace.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/parse/parse.o: sources/parse/parse.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `parse/parse'
+#  Last modified 2022-08-06 16:23:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/memory/free.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/env/add.o: sources/env/add.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `env/add'
+#  Last modified 2022-08-06 16:23:40
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/string/read_line.o: sources/string/read_line.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `string/read_line'
+#  Last modified 2022-07-31 21:56:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/memory/calloc.o: sources/memory/calloc.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `memory/calloc'
+#  Last modified 2022-07-31 21:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/command/name.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/file/reference.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+exe: build/obj/char/is_alpha.o build/obj/char/is_lowercase.o build/obj/char/is_uppercase.o build/obj/char/is_whitespace.o build/obj/char/is_special_parse.o build/obj/char/reference.o build/obj/char/to_lower.o build/obj/char/to_upper.o build/obj/command/add.o build/obj/command/cd.o build/obj/command/create.o build/obj/command/delete.o build/obj/command/echo.o build/obj/command/execute.o build/obj/command/export.o build/obj/command/function.o build/obj/command/g.o build/obj/command/greater_than.o build/obj/command/more_greater_than.o build/obj/command/name.o build/obj/command/pre_function.o build/obj/command/reference.o build/obj/command/system.o build/obj/command/token.o build/obj/command/unset.o build/obj/env/add.o build/obj/env/create.o build/obj/env/get.o build/obj/env/reference.o build/obj/env/size.o build/obj/env/to_double_pointer.o build/obj/file/close.o build/obj/file/create.o build/obj/file/reference.o build/obj/memory/add.o build/obj/memory/calloc.o build/obj/memory/copy.o build/obj/memory/free.o build/obj/memory/malloc.o build/obj/memory/realloc.o build/obj/memory/reference.o build/obj/memory/set.o build/obj/parse/dquote.o build/obj/parse/parse.o build/obj/parse/util_array.o build/obj/parse/util_debuging.o build/obj/parse/util_parse.o build/obj/parse/util_str.o build/obj/signal/reference.o build/obj/string/copy.o build/obj/string/dup.o build/obj/string/equals.o build/obj/string/is_quote.o build/obj/string/itoa.o build/obj/string/length.o build/obj/string/read_line.o build/obj/string/reference.o build/obj/string/split.o build/obj/minishell.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 101):
+	@$(CC) $(CFLAGS) -lreadline $^ -o $(NAME)
+	
+
+# Not a target:
+sources/parse/dquote.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-23 12:32:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all: build minishell
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+
+build/obj/memory/copy.o: sources/memory/copy.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `memory/copy'
+#  Last modified 2022-07-31 21:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/command/create.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/minishell.o: sources/minishell.c
+ 
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `minishell'
+#  Last modified 2022-08-06 16:23:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/file/create.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+.PHONY: all run clean fclean re
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/obj/string/dup.o: sources/string/dup.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `string/dup'
+#  Last modified 2022-07-31 21:56:33
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/command/export.o: sources/command/export.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/export'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/memory/reference.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/env/create.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/signal/reference.o: sources/signal/reference.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `signal/reference'
+#  Last modified 2022-07-31 21:56:33
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/parse/util_debuging.o: sources/parse/util_debuging.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `parse/util_debuging'
+#  Last modified 2022-08-06 16:23:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/memory/add.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-31 21:55:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/command/token.o: sources/command/token.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/token'
+#  Last modified 2022-08-06 16:23:40
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/memory/set.o: sources/memory/set.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `memory/set'
+#  Last modified 2022-07-31 21:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/env/size.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/char/is_special_parse.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/parse/util_str.o: sources/parse/util_str.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `parse/util_str'
+#  Last modified 2022-08-06 16:23:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/char/to_lower.o: sources/char/to_lower.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `char/to_lower'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/char/is_lowercase.o: sources/char/is_lowercase.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `char/is_lowercase'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+ 
+
+build/obj/command/reference.o: sources/command/reference.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/reference'
+#  Last modified 2022-08-06 16:23:40
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/string/length.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-31 21:55:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/command/execute.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-31 21:55:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/obj/string/split.o: sources/string/split.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `string/split'
+#  Last modified 2022-07-31 21:56:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/env/reference.o: sources/env/reference.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `env/reference'
+#  Last modified 2022-08-06 16:23:40
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/file/close.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-31 21:55:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/char/is_alpha.o: sources/char/is_alpha.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `char/is_alpha'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/char/to_upper.o: sources/char/to_upper.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `char/to_upper'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/string/reference.o: sources/string/reference.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `string/reference'
+#  Last modified 2022-07-31 21:56:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/command/system.o: sources/command/system.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/system'
+#  Last modified 2022-08-06 16:23:40
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/command/g.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/char/is_uppercase.o: sources/char/is_uppercase.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `char/is_uppercase'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/command/more_greater_than.o: sources/command/more_greater_than.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/more_greater_than'
+#  Last modified 2022-08-06 16:23:40
+ 
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-12 19:03:37
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 109):
+	@mkdir -p ${BUILD_DIR}
+	@mkdir -p ${BIN_DIR}
+	@mkdir -p ${OBJ_DIR}
+	
+
+# Not a target:
+sources/env/to_double_pointer.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/command/greater_than.o: sources/command/greater_than.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/greater_than'
+#  Last modified 2022-08-06 16:23:40
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/command/cd.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/parse/util_parse.o: sources/parse/util_parse.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `parse/util_parse'
+#  Last modified 2022-08-06 16:23:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/env/add.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/env/get.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/parse/parse.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/string/read_line.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-31 21:55:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/command/echo.o: sources/command/echo.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/echo'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/memory/calloc.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-31 21:55:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+minishell: build/obj/char/is_alpha.o build/obj/char/is_lowercase.o build/obj/char/is_uppercase.o build/obj/char/is_whitespace.o build/obj/char/is_special_parse.o build/obj/char/reference.o build/obj/char/to_lower.o build/obj/char/to_upper.o build/obj/command/add.o build/obj/command/cd.o build/obj/command/create.o build/obj/command/delete.o build/obj/command/echo.o build/obj/command/execute.o build/obj/command/export.o build/obj/command/function.o build/obj/command/g.o build/obj/command/greater_than.o build/obj/command/more_greater_than.o build/obj/command/name.o build/obj/command/pre_function.o build/obj/command/reference.o build/obj/command/system.o build/obj/command/token.o build/obj/command/unset.o build/obj/env/add.o build/obj/env/create.o build/obj/env/get.o build/obj/env/reference.o build/obj/env/size.o build/obj/env/to_double_pointer.o build/obj/file/close.o build/obj/file/create.o build/obj/file/reference.o build/obj/memory/add.o build/obj/memory/calloc.o build/obj/memory/copy.o build/obj/memory/free.o build/obj/memory/malloc.o build/obj/memory/realloc.o build/obj/memory/reference.o build/obj/memory/set.o build/obj/parse/dquote.o build/obj/parse/parse.o build/obj/parse/util_array.o build/obj/parse/util_debuging.o build/obj/parse/util_parse.o build/obj/parse/util_str.o build/obj/signal/reference.o build/obj/string/copy.o build/obj/string/dup.o build/obj/string/equals.o build/obj/string/is_quote.o build/obj/string/itoa.o build/obj/string/length.o build/obj/string/read_line.o build/obj/string/reference.o build/obj/string/split.o build/obj/minishell.o
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := minishell
+ 
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := build/obj/char/is_alpha.o build/obj/char/is_lowercase.o build/obj/char/is_uppercase.o build/obj/char/is_whitespace.o build/obj/char/is_special_parse.o build/obj/char/reference.o build/obj/char/to_lower.o build/obj/char/to_upper.o build/obj/command/add.o build/obj/command/cd.o build/obj/command/create.o build/obj/command/delete.o build/obj/command/echo.o build/obj/command/execute.o build/obj/command/export.o build/obj/command/function.o build/obj/command/g.o build/obj/command/greater_than.o build/obj/command/more_greater_than.o build/obj/command/name.o build/obj/command/pre_function.o build/obj/command/reference.o build/obj/command/system.o build/obj/command/token.o build/obj/command/unset.o build/obj/env/add.o build/obj/env/create.o build/obj/env/get.o build/obj/env/reference.o build/obj/env/size.o build/obj/env/to_double_pointer.o build/obj/file/close.o build/obj/file/create.o build/obj/file/reference.o build/obj/memory/add.o build/obj/memory/calloc.o build/obj/memory/copy.o build/obj/memory/free.o build/obj/memory/malloc.o build/obj/memory/realloc.o build/obj/memory/reference.o build/obj/memory/set.o build/obj/parse/dquote.o build/obj/parse/parse.o build/obj/parse/util_array.o build/obj/parse/util_debuging.o build/obj/parse/util_parse.o build/obj/parse/util_str.o build/obj/signal/reference.o build/obj/string/copy.o build/obj/string/dup.o build/obj/string/equals.o build/obj/string/is_quote.o build/obj/string/itoa.o build/obj/string/length.o build/obj/string/read_line.o build/obj/string/reference.o build/obj/string/split.o build/obj/minishell.o
+# automatic
+# | := 
+# automatic
+# < := build/obj/char/is_alpha.o
+# automatic
+# ^ := build/obj/char/is_alpha.o build/obj/char/is_lowercase.o build/obj/char/is_uppercase.o build/obj/char/is_whitespace.o build/obj/char/is_special_parse.o build/obj/char/reference.o build/obj/char/to_lower.o build/obj/char/to_upper.o build/obj/command/add.o build/obj/command/cd.o build/obj/command/create.o build/obj/command/delete.o build/obj/command/echo.o build/obj/command/execute.o build/obj/command/export.o build/obj/command/function.o build/obj/command/g.o build/obj/command/greater_than.o build/obj/command/more_greater_than.o build/obj/command/name.o build/obj/command/pre_function.o build/obj/command/reference.o build/obj/command/system.o build/obj/command/token.o build/obj/command/unset.o build/obj/env/add.o build/obj/env/create.o build/obj/env/get.o build/obj/env/reference.o build/obj/env/size.o build/obj/env/to_double_pointer.o build/obj/file/close.o build/obj/file/create.o build/obj/file/reference.o build/obj/memory/add.o build/obj/memory/calloc.o build/obj/memory/copy.o build/obj/memory/free.o build/obj/memory/malloc.o build/obj/memory/realloc.o build/obj/memory/reference.o build/obj/memory/set.o build/obj/parse/dquote.o build/obj/parse/parse.o build/obj/parse/util_array.o build/obj/parse/util_debuging.o build/obj/parse/util_parse.o build/obj/parse/util_str.o build/obj/signal/reference.o build/obj/string/copy.o build/obj/string/dup.o build/obj/string/equals.o build/obj/string/is_quote.o build/obj/string/itoa.o build/obj/string/length.o build/obj/string/read_line.o build/obj/string/reference.o build/obj/string/split.o build/obj/minishell.o
+# automatic
+# ? := build/obj/char/is_alpha.o build/obj/char/is_lowercase.o build/obj/char/is_uppercase.o build/obj/char/is_whitespace.o build/obj/char/is_special_parse.o build/obj/char/reference.o build/obj/char/to_lower.o build/obj/char/to_upper.o build/obj/command/add.o build/obj/command/cd.o build/obj/command/create.o build/obj/command/delete.o build/obj/command/echo.o build/obj/command/execute.o build/obj/command/export.o build/obj/command/function.o build/obj/command/g.o build/obj/command/greater_than.o build/obj/command/more_greater_than.o build/obj/command/name.o build/obj/command/pre_function.o build/obj/command/reference.o build/obj/command/system.o build/obj/command/token.o build/obj/command/unset.o build/obj/env/add.o build/obj/env/create.o build/obj/env/get.o build/obj/env/reference.o build/obj/env/size.o build/obj/env/to_double_pointer.o build/obj/file/close.o build/obj/file/create.o build/obj/file/reference.o build/obj/memory/add.o build/obj/memory/calloc.o build/obj/memory/copy.o build/obj/memory/free.o build/obj/memory/malloc.o build/obj/memory/realloc.o build/obj/memory/reference.o build/obj/memory/set.o build/obj/parse/dquote.o build/obj/parse/parse.o build/obj/parse/util_array.o build/obj/parse/util_debuging.o build/obj/parse/util_parse.o build/obj/parse/util_str.o build/obj/signal/reference.o build/obj/string/copy.o build/obj/string/dup.o build/obj/string/equals.o build/obj/string/is_quote.o build/obj/string/itoa.o build/obj/string/length.o build/obj/string/read_line.o build/obj/string/reference.o build/obj/string/split.o build/obj/minishell.o
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/17=6%
+#  commands to execute (from `Makefile', line 98):
+	@$(CC) $(CFLAGS) -lreadline $^ -o $(BIN)
+	
+
+build/obj/string/equals.o: sources/string/equals.c
+ 
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `string/equals'
+#  Last modified 2022-07-31 21:56:33
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/memory/realloc.o: sources/memory/realloc.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `memory/realloc'
+#  Last modified 2022-07-31 21:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/command/echo.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/memory/copy.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-23 12:32:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/minishell.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+fclean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 122):
+	@rm -rf $(BUILD_DIR)
+	@printf "$(RED)fclean done\e[0m\n"
+	
+
+# Not a target:
+sources/string/dup.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-23 12:32:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/command/export.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/memory/malloc.o: sources/memory/malloc.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `memory/malloc'
+#  Last modified 2022-07-31 21:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/string/itoa.o: sources/string/itoa.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `string/itoa'
+#  Last modified 2022-07-31 21:56:33
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/signal/reference.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-23 12:32:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/parse/util_debuging.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/command/delete.o: sources/command/delete.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/delete'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/command/token.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/memory/set.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-23 12:32:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/string/is_quote.o: sources/string/is_quote.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `string/is_quote'
+#  Last modified 2022-07-31 21:56:33
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/parse/util_str.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/char/to_lower.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/command/unset.o: sources/command/unset.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/unset'
+#  Last modified 2022-08-06 16:23:40
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/char/is_lowercase.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+ 
+sources/command/reference.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/parse/util_array.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-23 12:32:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/command/function.o: sources/command/function.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/function'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/command/add.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-31 21:55:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/string/copy.o: sources/string/copy.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `string/copy'
+#  Last modified 2022-08-06 16:23:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/string/split.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-31 21:55:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/char/reference.o: sources/char/reference.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `char/reference'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/env/reference.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+build/obj/command/pre_function.o: sources/command/pre_function.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/pre_function'
+#  Last modified 2022-08-06 16:23:40
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/char/is_alpha.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+run: all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 114):
+	@echo "Running ${NAME}"
+	@./${BIN}
+	
+
+build/obj/char/is_whitespace.o: sources/char/is_whitespace.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `char/is_whitespace'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/char/to_upper.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/string/reference.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-31 21:55:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 118):
+	@rm -rf $(OBJ_DIR)
+	@printf "\e[31mclean done\e[0m\n"
+	
+
+build/obj/memory/free.o: sources/memory/free.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `memory/free'
+#  Last modified 2022-08-06 16:23:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/command/system.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/char/is_uppercase.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/command/more_greater_than.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+ 
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/command/add.o: sources/command/add.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/add'
+#  Last modified 2022-07-31 21:56:26
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/command/name.o: sources/command/name.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/name'
+#  Last modified 2022-08-06 16:23:40
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/command/greater_than.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/file/reference.o: sources/file/reference.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `file/reference'
+#  Last modified 2022-08-06 16:23:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/parse/dquote.o: sources/parse/dquote.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `parse/dquote'
+#  Last modified 2022-07-31 21:56:32
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/command/create.o: sources/command/create.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/create'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/parse/util_parse.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/file/create.o: sources/file/create.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `file/create'
+#  Last modified 2022-08-06 16:23:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/memory/reference.o: sources/memory/reference.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `memory/reference'
+#  Last modified 2022-08-06 16:23:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/env/create.o: sources/env/create.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `env/create'
+#  Last modified 2022-08-06 16:23:40
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/string/equals.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-23 12:32:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/memory/add.o: sources/memory/add.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `memory/add'
+#  Last modified 2022-07-31 21:56:30
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/memory/realloc.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-23 12:32:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/env/get.o: sources/env/get.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `env/get'
+#  Last modified 2022-08-06 16:23:40
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/env/size.o: sources/env/size.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `env/size'
+#  Last modified 2022-08-06 16:23:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/char/is_special_parse.o: sources/char/is_special_parse.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `char/is_special_parse'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+ 
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/memory/malloc.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-31 21:55:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/string/itoa.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-23 12:32:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+sources/command/delete.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/string/length.o: sources/string/length.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `string/length'
+#  Last modified 2022-07-31 21:56:33
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/command/execute.o: sources/command/execute.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/execute'
+#  Last modified 2022-07-31 21:56:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/string/is_quote.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-23 12:32:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/file/close.o: sources/file/close.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `file/close'
+#  Last modified 2022-07-31 21:56:30
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+build/obj/parse/util_array.o: sources/parse/util_array.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `parse/util_array'
+#  Last modified 2022-07-31 21:56:32
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/command/unset.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/command/g.o: sources/command/g.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `command/g'
+#  Last modified 2022-08-06 16:23:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/command/function.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build/obj/env/to_double_pointer.o: sources/env/to_double_pointer.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `env/to_double_pointer'
+#  Last modified 2022-08-06 16:23:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 104):
+	@mkdir -p ${dir $@}
+	$(CC) $(CFLAGS) -I${INC_DIR} -c $< -o  $@
+	@echo "$(GRNGRN)/$(RST)\c"
+	
+
+# Not a target:
+sources/string/copy.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 10:58:04
+#  File has been updated.
+#  Successfully updated.
+ 
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# files hash-table stats:
+# Load=130/1024=13%, Rehash=0, Collisions=89/449=20%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Sat Aug  6 16:24:46 2022
+
+ 
