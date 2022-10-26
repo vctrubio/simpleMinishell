@@ -7,106 +7,74 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Sun Jun 26 19:23:56 2022
+# Make data base, printed on Mon Oct 24 18:45:20 2022
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
-# environment
-RUBY_VERSION = ruby-2.5.3
 # automatic
 ?F = $(notdir $?)
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
-HOMEBREW_NO_ANALYTICS = 1
-# environment
 LC_CTYPE = UTF-8
-# environment
-VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
-# environment
-rvm_path = /Users/V/.rvm
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/V/Documents/42/summer22/shs
+CURDIR := /Users/trtp/code/42/summer22/testMinishel
 # makefile
 SHELL = /bin/sh
-# makefile (from `Makefile', line 3)
-RM = rm -f
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
-# makefile (from `Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
-# makefile (from `Makefile', line 2)
-SRCS = ./srcs/*.c
+# makefile
+MAKEFILE_LIST := 
 # environment
-VSCODE_VERBOSE_LOGGING = true
+VSCODE_CWD = /Users/trtp/code/42/summer22
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/dx/1mwgg8zn23964hxvr_jsm4vh0000gn/T/vscode-ipc-2c0ce6be-e830-41f2-bc35-acf0ba7e7be7.sock
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.yZovithsnC/Render
 # environment
-VSCODE_CWD = /Users/V/Documents/42/summer22/shs
-# environment
-Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.Xr5QdkT1ZJ/Render
-# environment
-PATH = /Users/V/.rvm/gems/ruby-2.5.3/bin:/Users/V/.rvm/gems/ruby-2.5.3@global/bin:/Users/V/.rvm/rubies/ruby-2.5.3/bin:/usr/local/opt/openssl@1.1/bin:./bin:./node_modules/.bin:/Users/V/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/V/.zsh/misc:/Users/V/.fig/bin:/usr/local/sbin:/Users/V/.rvm/bin
+PATH = /Users/trtp/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/fzf/bin
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
-# environment
-FIG_CHECKED_PROMPTS = 1
-# environment
-VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.raFSsHDwXa/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.KIcQX5lABO/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-TTY = /dev/ttys000
-# environment
-FIG_ENV_VAR = 1
-# environment
-VSCODE_PIPE_LOGGING = true
-# environment
-rvm_bin_path = /Users/V/.rvm/bin
-# environment
-PWD = /Users/V/Documents/42/summer22/shs
-# environment
-GEM_HOME = /Users/V/.rvm/gems/ruby-2.5.3
+PWD = /Users/trtp/code/42/summer22/testMinishel
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /Users/V
+HOME = /Users/trtp
 # default
 MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/V/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = /Users/trtp/Library/Application Support/Code/CachedData/d045a5eda657f4d7b676dedbfa7aab8207f8a075
 # environment
-LOGNAME = V
-# environment
-BUNDLER_EDITOR = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a
+LOGNAME = trtp
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /Users/trtp/.oh-my-zsh
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
-# environment
-GEM_PATH = /Users/V/.rvm/gems/ruby-2.5.3:/Users/V/.rvm/gems/ruby-2.5.3@global
 # environment
 XPC_FLAGS = 0x0
 # default
@@ -114,23 +82,15 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-IRBRC = /Users/V/.rvm/rubies/ruby-2.5.3/.irbrc
-# environment
 SHLVL = 3
-# makefile (from `Makefile', line 6)
-LIBFT = $(LIBFT_PATH)/libft.a
 # default
 MAKE_VERSION := 3.81
 # environment
-USER = V
+USER = trtp
 # makefile
-.DEFAULT_GOAL := all
+.DEFAULT_GOAL := 
 # environment
-TERM_SESSION_ID = 0E54439F-82B8-48B2-A4DC-698DF7C5A75D
-# makefile (from `Makefile', line 1)
-NAME = minishell
-# environment
-rvm_version = 1.29.10-next (master)
+TERM_SESSION_ID = 7D9FEC30-CA79-4FA1-9A65-8D05A9A4606E
 # environment
 LESS = -R
 # automatic
@@ -142,11 +102,11 @@ TERM_PROGRAM = Apple_Terminal
 # default
 .VARIABLES := 
 # environment
-TMPDIR = /var/folders/dx/1mwgg8zn23964hxvr_jsm4vh0000gn/T/
+TMPDIR = /var/folders/36/ffh1c5cd5ys0jcqsnjvbf1q40000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/V/Library/Application Support/Code/1.68.1-main.sock
+VSCODE_IPC_HOOK = /Users/trtp/Library/Application Support/Code/1.72.2-main.sock
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -154,7 +114,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-TERM_PROGRAM_VERSION = 421.1.1
+TERM_PROGRAM_VERSION = 421.2
 # environment
 XPC_SERVICE_NAME = 0
 # automatic
@@ -165,24 +125,22 @@ XPC_SERVICE_NAME = 0
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 # default
 MAKEFILES := 
+# environment
+RBENV_SHELL = zsh
 # automatic
 <F = $(notdir $<)
-# makefile (from `Makefile', line 5)
-LIBFT_PATH = ./libft
-# makefile (from `Makefile', line 7)
-MAKELIB = make -C $(LIBFT_PATH) 
 # environment
 PAGER = less
 # environment
 LC_ALL = C
+# environment
+SECURITYSESSIONID = 186a7
 # automatic
 ^F = $(notdir $^)
-# environment
-rvm_prefix = /Users/V
 # default
 SUFFIXES := 
 # default
-.INCLUDE_DIRS = /usr/local/include
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
 MAKELEVEL := 0
 # environment
@@ -190,11 +148,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 6231
-# environment
-MY_RUBY_HOME = /Users/V/.rvm/rubies/ruby-2.5.3
+VSCODE_PID = 78802
 # variable set hash-table stats:
-# Load=91/1024=9%, Rehash=0, Collisions=4/123=3%
+# Load=69/1024=7%, Rehash=0, Collisions=2/94=2%
 
 # Pattern-specific Variable Values
 
@@ -202,9 +158,9 @@ MY_RUBY_HOME = /Users/V/.rvm/rubies/ruby-2.5.3
 
 # Directories
 
-# . (device 16777220, inode 8634927555): 13 files, no impossibilities.
+# . (device 16777220, inode 3389123): 11 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -212,43 +168,14 @@ MY_RUBY_HOME = /Users/V/.rvm/rubies/ruby-2.5.3
 
 # Files
 
-exe: all
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 23):
-	./$(NAME)
-	
-
+# Not a target:
 all:
 #  Command-line target.
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: `'
+#  Implicit rule search has been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := all
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := 
-# automatic
-# | := 
-# automatic
-# < := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
+#  File has not been updated.
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=2/16=12%
-#  commands to execute (from `Makefile', line 10):
-	$(MAKELIB)
-	gcc $(SRCS) $(LIBFT) -o $(NAME) -lreadline
-	
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 .SUFFIXES:
@@ -258,21 +185,23 @@ all:
 
 # Not a target:
 Makefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
 #  Implicit rule search has been done.
-#  Last modified 2022-06-23 16:46:02
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Failed to be updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-fclean:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 14):
-	$(RM) $(NAME)
-	$(MAKELIB) fclean
-	
+# Not a target:
+makefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 .DEFAULT:
@@ -280,32 +209,31 @@ fclean:
 #  Modification time never checked.
 #  File has not been updated.
 
-re: clean all
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-clean:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 18):
-	$(RM) $(NAME)
-	
+# Not a target:
+GNUmakefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # files hash-table stats:
-# Load=8/1024=1%, Rehash=0, Collisions=0/25=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
 
 # No general (`VPATH' variable) search path.
 
-# # of strings in strcache: 1
-# # of strcache buffers: 1
-# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
-# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+# # of strings in strcache: 0
+# # of strcache buffers: 0
+# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
+# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Sun Jun 26 19:23:56 2022
+# Finished Make data base on Mon Oct 24 18:45:20 2022
 
  
+make: *** No rule to make target `all'.  Stop.
+
